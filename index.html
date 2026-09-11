@@ -6,233 +6,217 @@
 
 <title>Muhammet ❤️ Esra</title>
 
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Poppins:wght@300;lay=swap
+
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&display=swap');
 
 *{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+margin:0;
+padding:0;
+box-sizing:border-box;
 }
 
 body{
-    font-family:'Cormorant Garamond',serif;
-    min-height:100vh;
-    background:linear-gradient(135deg,#e8b4c8,#b76e79);
-    color:white;
-    overflow-x:hidden;
+font-family:'Poppins',sans-serif;
+background:
+linear-gradient(rgba(0,0,0,.35),rgba(0,0,0,.35)),
+url("https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=1800&q=80");
+background-size:cover;
+background-position:center;
+background-attachment:fixed;
+color:white;
+overflow-x:hidden;
+}
+
+#hearts{
+position:fixed;
+inset:0;
+pointer-events:none;
+z-index:1;
+}
+
+.heart{
+position:absolute;
+bottom:-50px;
+animation:float linear infinite;
+opacity:.7;
+}
+
+@keyframes float{
+0%{
+transform:translateY(0) rotate(0deg);
+}
+100%{
+transform:translateY(-120vh) rotate(360deg);
+}
 }
 
 .container{
-    min-height:100vh;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    padding:20px;
+position:relative;
+z-index:2;
+min-height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+padding:30px;
 }
 
 .card{
-    width:100%;
-    max-width:850px;
-    background:rgba(255,255,255,.15);
-    backdrop-filter:blur(12px);
-    border-radius:30px;
-    padding:40px;
-    text-align:center;
-    box-shadow:0 20px 50px rgba(0,0,0,.25);
+width:100%;
+max-width:900px;
+background:rgba(255,255,255,.12);
+backdrop-filter:blur(15px);
+border:1px solid rgba(255,255,255,.25);
+border-radius:35px;
+padding:50px;
+text-align:center;
+box-shadow:0 25px 60px rgba(0,0,0,.35);
 }
 
-.ring{
-    font-size:55px;
-    margin-bottom:15px;
-}
-
-h1{
-    font-size:64px;
-    margin-bottom:10px;
+.names{
+font-family:'Cormorant Garamond',serif;
+font-size:80px;
+font-weight:700;
+color:#ffd700;
+margin-bottom:10px;
 }
 
 .subtitle{
-    font-size:24px;
-    margin-bottom:25px;
-    letter-spacing:3px;
+font-size:30px;
+letter-spacing:2px;
+margin-bottom:30px;
 }
 
-.text{
-    font-size:22px;
-    line-height:1.7;
-    margin-bottom:30px;
+.message{
+font-size:18px;
+line-height:1.9;
+max-width:700px;
+margin:auto;
+margin-bottom:35px;
 }
 
 .countdown{
-    font-size:32px;
-    color:#ffe082;
-    font-weight:bold;
-    margin-bottom:25px;
+font-size:32px;
+font-weight:700;
+color:#ffd700;
+margin-bottom:35px;
 }
 
-.box{
-    background:rgba(255,255,255,.12);
-    border-radius:20px;
-    padding:25px;
-    margin:20px 0;
+.section{
+background:rgba(255,255,255,.08);
+padding:25px;
+border-radius:25px;
+margin:20px 0;
 }
 
-.box h2{
-    margin-bottom:15px;
+.section h2{
+margin-bottom:15px;
+font-size:28px;
+color:#ffd700;
 }
 
 .btn{
-    display:inline-block;
-    margin-top:15px;
-    background:#ffd54f;
-    color:#000;
-    text-decoration:none;
-    padding:14px 28px;
-    border-radius:999px;
-    font-weight:bold;
+display:inline-block;
+margin-top:15px;
+padding:14px 28px;
+border-radius:50px;
+background:linear-gradient(45deg,#ffd700,#ffeb99);
+color:#222;
+font-weight:700;
+text-decoration:none;
+transition:.3s;
 }
 
-.music-btn{
-    margin-top:20px;
-    border:none;
-    background:white;
-    color:black;
-    padding:15px 28px;
-    border-radius:999px;
-    cursor:pointer;
-    font-weight:bold;
+.btn:hover{
+transform:translateY(-3px);
+}
+
+.music{
+margin-top:25px;
+}
+
+.music button{
+background:#ff4081;
+color:white;
+border:none;
+padding:14px 26px;
+border-radius:50px;
+cursor:pointer;
+font-size:16px;
+font-weight:bold;
+}
+
+.music button:hover{
+transform:scale(1.05);
 }
 
 .footer{
-    margin-top:30px;
-    font-size:24px;
+margin-top:40px;
+font-size:22px;
+color:#fff;
 }
 
-@media(max-width:700px){
-
-    h1{
-        font-size:46px;
-    }
-
-    .text{
-        font-size:18px;
-    }
-
-    .card{
-        padding:25px;
-    }
+hr{
+border:none;
+height:1px;
+background:rgba(255,255,255,.25);
+margin:30px 0;
 }
+
+@media(max-width:768px){
+
+.card{
+padding:30px 20px;
+}
+
+.names{
+font-size:48px;
+}
+
+.subtitle{
+font-size:22px;
+}
+
+.countdown{
+font-size:22px;
+}
+
+.message{
+font-size:16px;
+}
+
+}
+
 </style>
-</head>
 
+</head>
 <body>
+
+<div id="hearts"></div>
 
 <div class="container">
 
 <div class="card">
 
-<div class="ring">💍</div>
-
-<h1>Muhammet &amp; Esra</h1>
+<div class="names">
+Muhammet ❤️ Esra
+</div>
 
 <div class="subtitle">
-DÜĞÜN DAVETİYESİ
+Düğün Davetiyesi
 </div>
 
-<div class="text">
-Hayatlarımızı birleştirdiğimiz bu özel günde,
-sizleri aramızda görmekten büyük mutluluk duyacağız.
-</div>
+<p class="message">
+Hayatlarımızı birleştirdiğimiz bu özel yolculukta,
+en mutlu günümüzde siz değerli dostlarımızı ve ailemizi
+aramızda görmekten büyük mutluluk duyacağız.
 
-<div class="countdown" id="countdown">
-Yükleniyor...
-</div>
+<br><br>
 
-<div class="box">
-<h2>🌹 Kına Gecesi</h2>
-<p>
-📅 29 Ekim 2026<br><br>
-🕖 Saat 19:00
+Sevincimizi paylaşmak ve bu güzel anımıza şahit olmanız için
+sizleri düğünümüze davet ediyoruz.
 </p>
 
-<a class="btn"
-href="https://maps.app.goo.gl/etv8LUm2YHyeJYs27"
-target="_blank">
-📍 Kına Konumu
-</a>
-</div>
+<div id="countdown" class="countdown"></div>
 
-<div class="box">
-<h2>🤍 Nikah &amp; Düğün</h2>
-
-<p>
-📅 1 Kasım 2026<br><br>
-🕖 Saat 19:00
-</p>
-
-<a class="btn"
-href="https://maps.app.goo.gl/cWBfH7H8pAKT4YdU8"
-target="_blank">
-📍 Düğün Konumu
-</a>
-</div>
-
-<button class="music-btn" onclick="baslatMuzik()">
-🎵 Müziği Başlat
-</button>
-
-<div class="footer">
-Sevgiyle ❤️<br>
-Muhammet &amp; Esra
-</div>
-
-</div>
-
-</div>
-
-<audio id="music" loop>
-    <source src="muzik.mp3"ript>
-
-function baslatMuzik(){
-    document.getElementById("music").play();
-}
-
-function updateCountdown(){
-
-    const weddingDate =
-    new Date("2026-11-01T19:00:00");
-
-    const now = new Date();
-
-    const diff = weddingDate - now;
-
-    if(diff <= 0){
-        document.getElementById("countdown").innerHTML =
-        "💞 Bugün Büyük Gün 💞";
-        return;
-    }
-
-    const days =
-    Math.floor(diff / (1000*60*60*24));
-
-    const hours =
-    Math.floor(
-        (diff % (1000*60*60*24))
-        /
-        (1000*60*60)
-    );
-
-    document.getElementById("countdown").innerHTML =
-    "💞 Büyük güne " + days +
-    " gün " + hours +
-    " saat kaldı";
-}
-
-updateCountdown();
-setInterval(updateCountdown,1000);
-
-</script>
-
-</body>
-</html>
+<hr
