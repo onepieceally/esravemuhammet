@@ -1,0 +1,898 @@
+<!DOCTYPE html>
+
+<html lang="tr">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta
+name="viewport"
+content="width=device-width, initial-scale=1.0"
+>
+
+<title>
+Muhammet Ali ❤️ Esra
+</title>
+
+
+<style>
+
+*{
+    box-sizing:border-box;
+}
+
+
+body{
+
+    margin:0;
+
+    min-height:100vh;
+
+    font-family:
+    Arial,
+    sans-serif;
+
+    color:white;
+
+    background:
+
+    radial-gradient(
+        circle at 20% 20%,
+        rgba(255,255,255,.35),
+        transparent 25%
+    ),
+
+    linear-gradient(
+        135deg,
+        #6b173d,
+        #9e315f,
+        #d66d91,
+        #7e204c
+    );
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    padding:20px;
+
+}
+
+
+.container{
+
+    width:100%;
+
+    max-width:520px;
+
+    background:
+    rgba(255,255,255,.13);
+
+    border:
+    1px solid
+    rgba(255,255,255,.30);
+
+    backdrop-filter:
+    blur(20px);
+
+    -webkit-backdrop-filter:
+    blur(20px);
+
+    border-radius:30px;
+
+    padding:30px 25px;
+
+    box-shadow:
+    0 25px 60px
+    rgba(0,0,0,.30);
+
+}
+
+
+.icon{
+
+    font-size:55px;
+
+    text-align:center;
+
+    margin-bottom:10px;
+
+}
+
+
+h1{
+
+    font-family:
+    Georgia,
+    serif;
+
+    text-align:center;
+
+    margin:
+    0 0 8px;
+
+    font-size:32px;
+
+}
+
+
+.subtitle{
+
+    text-align:center;
+
+    opacity:.85;
+
+    font-size:14px;
+
+    line-height:1.6;
+
+    margin-bottom:25px;
+
+}
+
+
+label{
+
+    display:block;
+
+    font-size:14px;
+
+    font-weight:bold;
+
+    margin:
+    15px 0 7px;
+
+}
+
+
+input,
+textarea,
+select{
+
+    width:100%;
+
+    border:none;
+
+    outline:none;
+
+    padding:14px;
+
+    border-radius:15px;
+
+    font-family:
+    Arial,
+    sans-serif;
+
+    font-size:15px;
+
+    background:
+    rgba(255,255,255,.95);
+
+    color:#6b173d;
+
+}
+
+
+textarea{
+
+    min-height:100px;
+
+    resize:vertical;
+
+}
+
+
+input[type="file"]{
+
+    background:
+    rgba(255,255,255,.15);
+
+    color:white;
+
+    padding:12px;
+
+}
+
+
+input[type="file"]::file-selector-button{
+
+    border:none;
+
+    background:white;
+
+    color:#8d2853;
+
+    padding:10px 14px;
+
+    border-radius:10px;
+
+    font-weight:bold;
+
+    cursor:pointer;
+
+    margin-right:10px;
+
+}
+
+
+.file-info{
+
+    margin-top:8px;
+
+    font-size:12px;
+
+    opacity:.8;
+
+}
+
+
+button{
+
+    width:100%;
+
+    margin-top:22px;
+
+    padding:15px;
+
+    border:none;
+
+    border-radius:50px;
+
+    background:white;
+
+    color:#8d2853;
+
+    font-size:16px;
+
+    font-weight:bold;
+
+    cursor:pointer;
+
+}
+
+
+button:hover{
+
+    transform:
+    translateY(-2px);
+
+}
+
+
+button:disabled{
+
+    opacity:.6;
+
+    cursor:not-allowed;
+
+}
+
+
+.loading{
+
+    display:none;
+
+    text-align:center;
+
+    margin-top:18px;
+
+}
+
+
+.result{
+
+    display:none;
+
+    text-align:center;
+
+    margin-top:18px;
+
+    padding:15px;
+
+    border-radius:15px;
+
+    background:
+    rgba(255,255,255,.15);
+
+    line-height:1.6;
+
+}
+
+
+.back{
+
+    display:block;
+
+    text-align:center;
+
+    margin-top:20px;
+
+    color:white;
+
+    text-decoration:none;
+
+    font-size:13px;
+
+    opacity:.8;
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<div class="container">
+
+
+<div class="icon">
+
+📸
+
+</div>
+
+
+<h1>
+
+Anılarımızı Paylaşalım
+
+</h1>
+
+
+<div class="subtitle">
+
+Bu güzel günlerden kalan fotoğraflarınızı
+bizimle paylaşın. ❤️
+
+<br>
+
+Birden fazla fotoğraf seçebilirsiniz.
+
+</div>
+
+
+<!-- AD -->
+
+<label>
+
+👤 Adınız
+
+</label>
+
+
+<input
+type="text"
+id="ad"
+placeholder="Örn. Ahmet & Ayşe"
+maxlength="80"
+>
+
+
+<!-- ETKİNLİK -->
+
+<label>
+
+🌹 Hangi gün?
+
+</label>
+
+
+<select id="etkinlik">
+
+<option value="Kına">
+
+🌹 Kına Gecesi
+
+</option>
+
+<option value="Düğün">
+
+💍 Düğün
+
+</option>
+
+<option value="Diğer">
+
+❤️ Diğer
+
+</option>
+
+</select>
+
+
+<!-- FOTOĞRAF -->
+
+<label>
+
+📷 Fotoğraflarınız
+
+</label>
+
+
+<input
+type="file"
+id="fotograflar"
+accept="image/*"
+multiple
+>
+
+
+<div
+class="file-info"
+id="fileInfo"
+>
+
+Birden fazla fotoğraf seçebilirsiniz.
+
+</div>
+
+
+<!-- ANI -->
+
+<label>
+
+💌 Birkaç kelime bırakmak ister misiniz?
+
+</label>
+
+
+<textarea
+id="mesaj"
+placeholder="Muhammet Ali & Esra'ya bir anı bırakın..."
+maxlength="1000"
+></textarea>
+
+
+<!-- BUTON -->
+
+<button
+id="gonder"
+onclick="gonder()"
+>
+
+❤️ Fotoğrafları Gönder
+
+</button>
+
+
+<div
+class="loading"
+id="loading"
+>
+
+⏳ Fotoğraflarınız yükleniyor...
+
+<br>
+
+Lütfen sayfayı kapatmayın.
+
+</div>
+
+
+<div
+class="result"
+id="result"
+></div>
+
+
+<a
+href="#"
+class="back"
+onclick="window.history.back(); return false;"
+>
+
+← Davetiyeye dön
+
+</a>
+
+
+</div>
+
+
+<script>
+
+
+/* =====================================================
+   DOSYA SEÇİMİ
+===================================================== */
+
+document
+.getElementById("fotograflar")
+.addEventListener(
+    "change",
+    function(){
+
+        const dosyalar =
+        this.files;
+
+        const bilgi =
+        document.getElementById(
+            "fileInfo"
+        );
+
+
+        if(!dosyalar.length){
+
+            bilgi.innerHTML =
+            "Birden fazla fotoğraf seçebilirsiniz.";
+
+            return;
+
+        }
+
+
+        let toplam =
+        0;
+
+
+        for(
+            let i = 0;
+            i < dosyalar.length;
+            i++
+        ){
+
+            toplam +=
+            dosyalar[i].size;
+
+        }
+
+
+        toplam =
+        toplam /
+        (1024 * 1024);
+
+
+        bilgi.innerHTML =
+
+        "📷 " +
+        dosyalar.length +
+        " fotoğraf seçildi";
+
+    }
+);
+
+
+/* =====================================================
+   FOTOĞRAFI BASE64 YAP
+===================================================== */
+
+function dosyaOku(dosya){
+
+    return new Promise(
+        function(resolve,reject){
+
+            const reader =
+            new FileReader();
+
+
+            reader.onload =
+            function(){
+
+                resolve({
+                    name:dosya.name,
+                    type:dosya.type,
+                    data:reader.result
+                });
+
+            };
+
+
+            reader.onerror =
+            reject;
+
+
+            reader.readAsDataURL(
+                dosya
+            );
+
+        }
+    );
+
+}
+
+
+/* =====================================================
+   GÖNDER
+===================================================== */
+
+async function gonder(){
+
+
+    const ad =
+    document
+    .getElementById("ad")
+    .value
+    .trim();
+
+
+    const etkinlik =
+    document
+    .getElementById("etkinlik")
+    .value;
+
+
+    const mesaj =
+    document
+    .getElementById("mesaj")
+    .value
+    .trim();
+
+
+    const input =
+    document
+    .getElementById("fotograflar");
+
+
+    const dosyalar =
+    Array.from(
+        input.files
+    );
+
+
+    /* -------------------------------------------------
+       KONTROLLER
+    ------------------------------------------------- */
+
+
+    if(!ad){
+
+        alert(
+            "Lütfen adınızı yazın ❤️"
+        );
+
+        return;
+
+    }
+
+
+    if(!dosyalar.length){
+
+        alert(
+            "Lütfen en az bir fotoğraf seçin 📸"
+        );
+
+        return;
+
+    }
+
+
+    /* Maksimum 10 fotoğraf */
+
+    if(dosyalar.length > 10){
+
+        alert(
+            "Tek seferde en fazla 10 fotoğraf seçebilirsiniz."
+        );
+
+        return;
+
+    }
+
+
+    /* Fotoğraf boyutu */
+
+    for(
+        const dosya of dosyalar
+    ){
+
+        if(
+            dosya.size >
+            10 * 1024 * 1024
+        ){
+
+            alert(
+                dosya.name +
+                " 10 MB'dan büyük."
+            );
+
+            return;
+
+        }
+
+    }
+
+
+    /* -------------------------------------------------
+       UI
+    ------------------------------------------------- */
+
+
+    const button =
+    document
+    .getElementById("gonder");
+
+
+    const loading =
+    document
+    .getElementById("loading");
+
+
+    const result =
+    document
+    .getElementById("result");
+
+
+    button.disabled =
+    true;
+
+
+    loading.style.display =
+    "block";
+
+
+    result.style.display =
+    "none";
+
+
+    try{
+
+
+        /* ------------------------------------------------
+           FOTOĞRAFLARI OKU
+        ------------------------------------------------ */
+
+
+        const fotograflar =
+        [];
+
+
+        for(
+            const dosya of dosyalar
+        ){
+
+            const foto =
+            await dosyaOku(
+                dosya
+            );
+
+
+            fotograflar.push(
+                foto
+            );
+
+        }
+
+
+        /* ------------------------------------------------
+           GOOGLE APPS SCRIPT
+        ------------------------------------------------ */
+
+
+        google
+        .script
+        .run
+
+        .withSuccessHandler(
+            function(sonuc){
+
+                loading.style.display =
+                "none";
+
+
+                button.disabled =
+                false;
+
+
+                result.style.display =
+                "block";
+
+
+                if(
+                    sonuc.basarili
+                ){
+
+                    result.innerHTML =
+
+                    "🎉 " +
+                    sonuc.mesaj +
+                    "<br><br>" +
+
+                    "Muhammet Ali & Esra'ya" +
+                    "<br>" +
+                    "katkınız için teşekkür ederiz. ❤️";
+
+
+                    document
+                    .getElementById("ad")
+                    .value = "";
+
+
+                    document
+                    .getElementById("mesaj")
+                    .value = "";
+
+
+                    input.value = "";
+
+                    document
+                    .getElementById("fileInfo")
+                    .innerHTML =
+                    "Birden fazla fotoğraf seçebilirsiniz.";
+
+                }
+
+                else{
+
+                    result.innerHTML =
+
+                    "❌ " +
+                    sonuc.mesaj;
+
+                }
+
+            }
+        )
+
+        .withFailureHandler(
+            function(hata){
+
+                loading.style.display =
+                "none";
+
+
+                button.disabled =
+                false;
+
+
+                result.style.display =
+                "block";
+
+
+                result.innerHTML =
+
+                "❌ Bir hata oluştu." +
+                "<br><br>" +
+                hata.message;
+
+            }
+        )
+
+        .fotografYukle({
+
+            ad:
+            ad,
+
+            etkinlik:
+            etkinlik,
+
+            mesaj:
+            mesaj,
+
+            fotograflar:
+            fotograflar
+
+        });
+
+
+    }
+
+    catch(hata){
+
+        loading.style.display =
+        "none";
+
+
+        button.disabled =
+        false;
+
+
+        alert(
+            "Fotoğraflar okunurken hata oluştu."
+        );
+
+    }
+
+}
+
+</script>
+
+
+</body>
+
+</html>
