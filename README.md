@@ -1,9 +1,3 @@
 index.html
-`Muhammet ❤️ Esra
-Düğün Davetiyesi
-Sizleri mutluluğumuzu paylaşmaya davet ediyoruz.
-
-28 Haziran 2027
-Saat: 19:00
-
-Ataşehir, İstanbul`
+`<img width="4032" height="3410" alt="image" src="https://github.com/user-attachments/assets/a42a45cb-d6d4-4b80-8af0-de413ab6c79f" />
+`
