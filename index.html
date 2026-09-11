@@ -4,150 +4,144 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Muhammet & Esra</title>
+<title>Muhammet ❤️ Esra</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&display=swap"
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;600p
+
+<style>
+
+*{
 margin:0;
 padding:0;
 box-sizing:border-box;
 }
 
 body{
-
-font-family:'Cormorant Garamond',serif;
-
-background:
-linear-gradient(rgba(0,0,0,.45),
-rgba(0,0,0,.45)),
-url("https://images.unsplash.com/photo-1519741497674-611481863552?q=80&w=1200");
-
-background-size:cover;
-background-position:center;
-background-attachment:fixed;
-
+font-family:Poppins,sans-serif;
+background:linear-gradient(135deg,#ffdde1,#ee9ca7);
+overflow-x:hidden;
 color:white;
+}
 
+.hearts{
+position:fixed;
+width:100%;
+height:100%;
+pointer-events:none;
+z-index:1;
+}
+
+.heart{
+position:absolute;
+font-size:20px;
+animation:float 8s linear infinite;
+opacity:.7;
+}
+
+@keyframes float{
+from{
+transform:translateY(100vh);
+}
+to{
+transform:translateY(-100px);
+}
+}
+
+.container{
+position:relative;
+z-index:2;
 min-height:100vh;
-
 display:flex;
 justify-content:center;
 align-items:center;
-
 padding:20px;
 }
 
 .card{
-
 width:100%;
-max-width:700px;
-
-background:rgba(255,255,255,.15);
-
-backdrop-filter:blur(14px);
-
-border:1px solid rgba(255,255,255,.2);
-
+max-width:850px;
+background:rgba(255,255,255,0.15);
+backdrop-filter:blur(12px);
+padding:40px;
 border-radius:30px;
-
-padding:40px 30px;
-
 text-align:center;
-
-box-shadow:
-0 20px 60px rgba(0,0,0,.4);
+box-shadow:0 10px 40px rgba(0,0,0,.25);
 }
 
-.heart{
-font-size:40px;
+.names{
+font-family:'Great Vibes',cursive;
+font-size:70px;
 margin-bottom:10px;
 }
 
-h1{
-
-font-size:52px;
-margin-bottom:15px;
-
-}
-
 .subtitle{
-
 font-size:28px;
-margin-bottom:25px;
-
-letter-spacing:2px;
-}
-
-.desc{
-
-font-size:22px;
-line-height:1.6;
 margin-bottom:30px;
 }
 
-.datebox{
-
-background:rgba(255,255,255,.12);
-
-padding:20px;
-
-border-radius:20px;
-
-margin-bottom:25px;
+.text{
+font-size:18px;
+line-height:1.8;
+margin-bottom:35px;
 }
 
-.datebox h2{
-font-size:34px;
-margin-bottom:10px;
+.box{
+background:rgba(255,255,255,.15);
+padding:25px;
+border-radius:20px;
+margin:20px 0;
+}
+
+.box h2{
+margin-bottom:15px;
+}
+
+.btn{
+display:inline-block;
+margin-top:15px;
+background:white;
+color:#d63384;
+padding:14px 28px;
+border-radius:50px;
+text-decoration:none;
+font-weight:bold;
+transition:.3s;
+}
+
+.btn:hover{
+transform:scale(1.05);
 }
 
 .countdown{
-
 font-size:28px;
-font-weight:bold;
-
-margin-top:10px;
-color:#ffd700;
-}
-
-.button{
-
-display:inline-block;
-
-padding:14px 28px;
-
-background:#d4af37;
-
-color:#000;
-
-text-decoration:none;
-
-border-radius:999px;
-
-font-size:20px;
-font-weight:bold;
-
-margin-top:20px;
+font-weight:700;
+margin:25px 0;
 }
 
 .footer{
-
-margin-top:35px;
-
-font-size:26px;
+margin-top:30px;
+font-size:22px;
 }
 
-@media(max-width:600px){
+.music-btn{
+background:#fff;
+color:#d63384;
+border:none;
+padding:14px 25px;
+border-radius:50px;
+font-size:16px;
+cursor:pointer;
+margin-top:20px;
+}
 
-h1{
-font-size:40px;
+@media(max-width:700px){
+
+.names{
+font-size:48px;
 }
 
 .subtitle{
 font-size:22px;
-}
-
-.desc{
-font-size:18px;
 }
 
 }
@@ -157,83 +151,108 @@ font-size:18px;
 
 <body>
 
+<div class="hearts" id="hearts"></div>
+
+<div class="container">
+
 <div class="card">
 
-<div class="heart">💍</div>
-
-<h1>Muhammet & Esra</h1>
+<div class="names">
+Muhammet ❤️ Esra
+</div>
 
 <div class="subtitle">
 Düğün Davetiyesi
 </div>
 
-<p class="desc">
-Hayatlarımızı birleştirdiğimiz bu özel günde,
-sizleri de mutluluğumuza ortak olmaya davet ediyoruz.
+<div class="text">
+Hayatlarımızı birleştirdiğimiz bu özel yolculukta,
+en mutlu günümüzde sizleri aramızda görmekten
+onur duyacağız.
+<br><br>
+Sevincimizi ve mutluluğumuzu paylaşmanız dileğiyle...
+</div>
+
+<div class="countdown" id="countdown"></div>
+
+<div class="box">
+<h2>🌹 Kına Gecesi</h2>
+
+<p>
+📅 29 Ekim 2026
+<br>
+🕖 Saat 19:00
 </p>
 
-<div class="datebox">
-
-<h2>1 Kasım 2026</h2>
-
-<div>
-🕖 Saat 19:00
-</div>
-
-<div id="countdown"
-class="countdown">
-Yükleniyor...
-</div>
-
-</div>
-
-https://maps.google.com
-📍 Konuma Git
+<a class="btn"
+href="https://maps.app.goo.gl/etv8LUm2YHyeJYs27"
+target="_blank">
+📍 Kına Konumu
 </a>
+</div>
+
+<div class="box">
+<h2>💍 Nikah & Düğün</h2>
+
+<p>
+📅 1 Kasım 2026
+</p>
+
+<a class="btn"
+href="https://maps.app.goo.gl/cWBfH7H8pAKT4YdU8"
+target="_blank">
+📍 Düğün Konumu
+</a>
+</div>
+
+<button class="music-btn" onclick="document.getElementById('music').play()">
+🎵 Müziği Başlat
+</button>
 
 <div class="footer">
-Sevgiyle ❤️
-<br><br>
+Sevgiyle ❤️<br>
 Muhammet & Esra
 </div>
 
 </div>
 
-<script>
+</div>
 
-const weddingDate =
-new Date("2026-11-01T19:00:00");
+<audio id="music" loop>
+muzik.mp3
+</audio>
+
+<script>
 
 function updateCountdown(){
 
-const now = new Date();
+const weddingDate = new Date("2026-11-01T19:00:00").getTime();
+const now = new Date().getTime();
 
-const diff =
-weddingDate - now;
+const diff = weddingDate - now;
 
-if(diff <= 0){
+const days = Math.floor(diff/(1000*60*60*24));
 
-document.getElementById("countdown")
-.innerHTML =
-"Bugün Büyük Gün ❤️";
-
-return;
+document.getElementById("countdown").innerHTML =
+"💞 Büyük güne " + days + " gün kaldı";
 }
-
-const days =
-Math.floor(diff /
-(1000*60*60*24));
-
-document.getElementById("countdown")
-.innerHTML =
-"💞 Büyük güne "
-+ days +
-" gün kaldı";
-}
-
-updateCountdown();
 
 setInterval(updateCountdown,1000);
+
+for(let i=0;i<25;i++){
+
+let heart=document.createElement("div");
+
+heart.className="heart";
+heart.innerHTML="💖";
+
+heart.style.left=Math.random()*100+"%";
+heart.style.animationDuration=(5+Math.random()*7)+"s";
+heart.style.fontSize=(15+Math.random()*30)+"px";
+
+document.getElementById("hearts").appendChild(heart);
+
+}
 
 </script>
 
