@@ -6,7 +6,7 @@
 
 <title>Muhammet ❤️ Esra</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;600p
+<link href="https://fonts.googleapis.com/css2?family=Great+=Poppins:wght@300;400;600&display=swap
 
 <style>
 
@@ -17,7 +17,7 @@ box-sizing:border-box;
 }
 
 body{
-font-family:Poppins,sans-serif;
+font-family:'Poppins',sans-serif;
 background:linear-gradient(135deg,#ffdde1,#ee9ca7);
 overflow-x:hidden;
 color:white;
@@ -124,7 +124,7 @@ font-size:22px;
 }
 
 .music-btn{
-background:#fff;
+background:white;
 color:#d63384;
 border:none;
 padding:14px 25px;
@@ -132,6 +132,11 @@ border-radius:50px;
 font-size:16px;
 cursor:pointer;
 margin-top:20px;
+font-weight:bold;
+}
+
+.music-btn:hover{
+transform:scale(1.05);
 }
 
 @media(max-width:700px){
@@ -142,6 +147,14 @@ font-size:48px;
 
 .subtitle{
 font-size:22px;
+}
+
+.text{
+font-size:16px;
+}
+
+.card{
+padding:25px;
 }
 
 }
@@ -167,20 +180,21 @@ Düğün Davetiyesi
 
 <div class="text">
 Hayatlarımızı birleştirdiğimiz bu özel yolculukta,
-en mutlu günümüzde sizleri aramızda görmekten
-onur duyacağız.
+mutluluğumuzu paylaşmak ve en güzel anlarımızda
+sizleri de aramızda görmek istiyoruz.
 <br><br>
-Sevincimizi ve mutluluğumuzu paylaşmanız dileğiyle...
+Bu anlamlı günümüzde yanımızda olmanız bize büyük mutluluk verecektir.
 </div>
 
-<div class="countdown" id="countdown"></div>
+<div class="countdown" id="countdown">
+Yükleniyor...
+</div>
 
 <div class="box">
 <h2>🌹 Kına Gecesi</h2>
 
 <p>
-📅 29 Ekim 2026
-<br>
+📅 29 Ekim 2026<br>
 🕖 Saat 19:00
 </p>
 
@@ -195,7 +209,8 @@ target="_blank">
 <h2>💍 Nikah & Düğün</h2>
 
 <p>
-📅 1 Kasım 2026
+📅 1 Kasım 2026<br>
+🕖 Saat 19:00
 </p>
 
 <a class="btn"
@@ -205,12 +220,13 @@ target="_blank">
 </a>
 </div>
 
-<button class="music-btn" onclick="document.getElementById('music').play()">
+<button class="music-btn" onclick="baslatMuzik()">
 🎵 Müziği Başlat
 </button>
 
 <div class="footer">
-Sevgiyle ❤️<br>
+Sevgiyle ❤️
+<br>
 Muhammet & Esra
 </div>
 
@@ -224,6 +240,10 @@ muzik.mp3
 
 <script>
 
+function baslatMuzik(){
+document.getElementById("music").play();
+}
+
 function updateCountdown(){
 
 const weddingDate = new Date("2026-11-01T19:00:00").getTime();
@@ -231,12 +251,19 @@ const now = new Date().getTime();
 
 const diff = weddingDate - now;
 
+if(diff <= 0){
+document.getElementById("countdown").innerHTML =
+"💞 Bugün Büyük Gün 💞";
+return;
+}
+
 const days = Math.floor(diff/(1000*60*60*24));
 
 document.getElementById("countdown").innerHTML =
 "💞 Büyük güne " + days + " gün kaldı";
 }
 
+updateCountdown();
 setInterval(updateCountdown,1000);
 
 for(let i=0;i<25;i++){
