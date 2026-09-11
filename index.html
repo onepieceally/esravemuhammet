@@ -1,222 +1,1399 @@
+```html
 <!DOCTYPE html>
 <html lang="tr">
+
 <head>
+
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
 
 <title>Muhammet ❤️ Esra</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Poppins:wght@300;lay=swap
+<!-- GOOGLE FONTS -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect"
+href="https://fonts.gstatic.com"
+crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Cormorant+Garamond:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap"
+rel="stylesheet">
+
 
 <style>
 
+/* =========================================================
+   GENEL AYARLAR
+========================================================= */
+
 *{
-margin:0;
-padding:0;
-box-sizing:border-box;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
 }
 
 body{
-font-family:'Poppins',sans-serif;
-background:
-linear-gradient(rgba(0,0,0,.35),rgba(0,0,0,.35)),
-url("https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=1800&q=80");
-background-size:cover;
-background-position:center;
-background-attachment:fixed;
-color:white;
-overflow-x:hidden;
+
+    font-family:'Poppins',sans-serif;
+
+    min-height:100vh;
+
+    color:white;
+
+    overflow-x:hidden;
+
+    background:
+    radial-gradient(circle at 20% 20%, rgba(255,255,255,.35), transparent 25%),
+    radial-gradient(circle at 80% 80%, rgba(255,255,255,.20), transparent 30%),
+    linear-gradient(
+        135deg,
+        #6b173d,
+        #9e315f,
+        #d66d91,
+        #7e204c
+    );
+
+    background-size:
+    auto,
+    auto,
+    400% 400%;
+
+    animation:bgMove 18s ease infinite;
+
 }
+
+
+/* =========================================================
+   ARKA PLAN ANİMASYONU
+========================================================= */
+
+@keyframes bgMove{
+
+    0%{
+        background-position:
+        0 0,
+        0 0,
+        0% 50%;
+    }
+
+    50%{
+        background-position:
+        0 0,
+        0 0,
+        100% 50%;
+    }
+
+    100%{
+        background-position:
+        0 0,
+        0 0,
+        0% 50%;
+    }
+
+}
+
+
+/* =========================================================
+   KALPLER
+========================================================= */
 
 #hearts{
-position:fixed;
-inset:0;
-pointer-events:none;
-z-index:1;
+
+    position:fixed;
+
+    inset:0;
+
+    pointer-events:none;
+
+    z-index:1;
+
+    overflow:hidden;
 }
+
 
 .heart{
-position:absolute;
-bottom:-50px;
-animation:float linear infinite;
-opacity:.7;
+
+    position:absolute;
+
+    bottom:-60px;
+
+    opacity:.45;
+
+    animation:
+    floatUp linear infinite;
+
+    filter:
+    drop-shadow(0 5px 10px rgba(0,0,0,.15));
+
 }
 
-@keyframes float{
-0%{
-transform:translateY(0) rotate(0deg);
+
+@keyframes floatUp{
+
+    0%{
+
+        transform:
+        translateY(0)
+        rotate(0deg)
+        scale(.8);
+
+        opacity:0;
+
+    }
+
+    10%{
+
+        opacity:.5;
+
+    }
+
+    50%{
+
+        opacity:.7;
+
+    }
+
+    100%{
+
+        transform:
+        translateY(-120vh)
+        rotate(360deg)
+        scale(1.2);
+
+        opacity:0;
+
+    }
+
 }
-100%{
-transform:translateY(-120vh) rotate(360deg);
-}
-}
+
+
+/* =========================================================
+   ANA KONTEYNER
+========================================================= */
 
 .container{
-position:relative;
-z-index:2;
-min-height:100vh;
-display:flex;
-justify-content:center;
-align-items:center;
-padding:30px;
+
+    position:relative;
+
+    z-index:2;
+
+    min-height:100vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    padding:30px 15px;
+
 }
+
+
+/* =========================================================
+   ANA KART
+========================================================= */
 
 .card{
-width:100%;
-max-width:900px;
-background:rgba(255,255,255,.12);
-backdrop-filter:blur(15px);
-border:1px solid rgba(255,255,255,.25);
-border-radius:35px;
-padding:50px;
-text-align:center;
-box-shadow:0 25px 60px rgba(0,0,0,.35);
+
+    width:100%;
+
+    max-width:900px;
+
+    padding:55px 35px;
+
+    text-align:center;
+
+    border-radius:40px;
+
+    background:
+    rgba(255,255,255,.13);
+
+    border:
+    1px solid rgba(255,255,255,.35);
+
+    backdrop-filter:
+    blur(20px);
+
+    -webkit-backdrop-filter:
+    blur(20px);
+
+    box-shadow:
+    0 30px 80px rgba(0,0,0,.30);
+
 }
+
+
+/* =========================================================
+   YÜZÜKLER
+========================================================= */
+
+.rings{
+
+    font-size:52px;
+
+    margin-bottom:15px;
+
+    animation:ringFloat 3s ease-in-out infinite;
+
+}
+
+
+@keyframes ringFloat{
+
+    0%,100%{
+        transform:translateY(0);
+    }
+
+    50%{
+        transform:translateY(-8px);
+    }
+
+}
+
+
+/* =========================================================
+   İSİMLER
+========================================================= */
 
 .names{
-font-family:'Cormorant Garamond',serif;
-font-size:80px;
-font-weight:700;
-color:#ffd700;
-margin-bottom:10px;
+
+    font-family:'Great Vibes',cursive;
+
+    font-size:95px;
+
+    line-height:1.1;
+
+    text-shadow:
+    0 5px 20px rgba(0,0,0,.25);
+
+    margin-bottom:5px;
+
 }
+
+
+.heart-name{
+
+    font-family:'Poppins',sans-serif;
+
+    font-size:50px;
+
+    vertical-align:middle;
+
+}
+
+
+/* =========================================================
+   BAŞLIK
+========================================================= */
 
 .subtitle{
-font-size:30px;
-letter-spacing:2px;
-margin-bottom:30px;
+
+    font-family:
+    'Cormorant Garamond',
+    serif;
+
+    font-size:27px;
+
+    letter-spacing:5px;
+
+    font-weight:600;
+
+    margin-bottom:30px;
+
 }
+
+
+/* =========================================================
+   AYRAÇ
+========================================================= */
+
+.divider{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:15px;
+
+    margin:20px 0 30px;
+
+    opacity:.8;
+
+}
+
+
+.divider span{
+
+    height:1px;
+
+    width:100px;
+
+    background:
+    rgba(255,255,255,.7);
+
+}
+
+
+.divider i{
+
+    font-style:normal;
+
+    font-size:20px;
+
+}
+
+
+/* =========================================================
+   MESAJ
+========================================================= */
 
 .message{
-font-size:18px;
-line-height:1.9;
-max-width:700px;
-margin:auto;
-margin-bottom:35px;
+
+    max-width:700px;
+
+    margin:auto;
+
+    margin-bottom:35px;
+
+    font-family:
+    'Cormorant Garamond',
+    serif;
+
+    font-size:22px;
+
+    line-height:1.7;
+
 }
+
+
+.message strong{
+
+    font-weight:700;
+
+}
+
+
+/* =========================================================
+   GERİ SAYIM
+========================================================= */
+
+.countdown-title{
+
+    font-size:15px;
+
+    letter-spacing:3px;
+
+    text-transform:uppercase;
+
+    opacity:.85;
+
+    margin-bottom:10px;
+
+}
+
 
 .countdown{
-font-size:32px;
-font-weight:700;
-color:#ffd700;
-margin-bottom:35px;
+
+    font-family:
+    'Cormorant Garamond',
+    serif;
+
+    font-size:32px;
+
+    font-weight:700;
+
+    color:#fff6bd;
+
+    margin-bottom:35px;
+
+    text-shadow:
+    0 3px 15px rgba(0,0,0,.25);
+
 }
 
-.section{
-background:rgba(255,255,255,.08);
-padding:25px;
-border-radius:25px;
-margin:20px 0;
+
+/* =========================================================
+   ETKİNLİK KARTLARI
+========================================================= */
+
+.events{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(2,1fr);
+
+    gap:20px;
+
 }
 
-.section h2{
-margin-bottom:15px;
-font-size:28px;
-color:#ffd700;
+
+.event{
+
+    padding:30px 20px;
+
+    border-radius:28px;
+
+    background:
+    rgba(255,255,255,.12);
+
+    border:
+    1px solid
+    rgba(255,255,255,.20);
+
+    transition:
+    transform .3s ease,
+    background .3s ease;
+
 }
+
+
+.event:hover{
+
+    transform:
+    translateY(-7px);
+
+    background:
+    rgba(255,255,255,.18);
+
+}
+
+
+.event-icon{
+
+    font-size:45px;
+
+    margin-bottom:10px;
+
+}
+
+
+.event h2{
+
+    font-family:
+    'Cormorant Garamond',
+    serif;
+
+    font-size:32px;
+
+    margin-bottom:15px;
+
+}
+
+
+.event p{
+
+    font-size:17px;
+
+    line-height:1.9;
+
+    margin-bottom:15px;
+
+}
+
+
+/* =========================================================
+   BUTONLAR
+========================================================= */
 
 .btn{
-display:inline-block;
-margin-top:15px;
-padding:14px 28px;
-border-radius:50px;
-background:linear-gradient(45deg,#ffd700,#ffeb99);
-color:#222;
-font-weight:700;
-text-decoration:none;
-transition:.3s;
+
+    display:inline-block;
+
+    padding:
+    13px 25px;
+
+    border-radius:50px;
+
+    background:white;
+
+    color:#8d2853;
+
+    text-decoration:none;
+
+    font-size:14px;
+
+    font-weight:700;
+
+    transition:
+    .3s ease;
+
 }
+
 
 .btn:hover{
-transform:translateY(-3px);
+
+    transform:
+    translateY(-3px)
+    scale(1.04);
+
+    box-shadow:
+    0 10px 25px
+    rgba(0,0,0,.2);
+
 }
 
-.music{
-margin-top:25px;
+
+/* =========================================================
+   MÜZİK BUTONU
+========================================================= */
+
+.music-btn{
+
+    margin-top:30px;
+
+    padding:
+    15px 30px;
+
+    border:none;
+
+    border-radius:50px;
+
+    background:
+    rgba(255,255,255,.95);
+
+    color:#8d2853;
+
+    font-family:'Poppins',sans-serif;
+
+    font-weight:700;
+
+    font-size:15px;
+
+    cursor:pointer;
+
+    transition:.3s ease;
+
 }
 
-.music button{
-background:#ff4081;
-color:white;
-border:none;
-padding:14px 26px;
-border-radius:50px;
-cursor:pointer;
-font-size:16px;
-font-weight:bold;
+
+.music-btn:hover{
+
+    transform:
+    translateY(-3px)
+    scale(1.04);
+
+    box-shadow:
+    0 10px 25px
+    rgba(0,0,0,.20);
+
 }
 
-.music button:hover{
-transform:scale(1.05);
+
+/* =========================================================
+   HİKAYE BÖLÜMÜ
+========================================================= */
+
+.story{
+
+    margin-top:40px;
+
+    padding:30px 20px;
+
+    border-radius:28px;
+
+    background:
+    rgba(255,255,255,.08);
+
 }
+
+
+.story h2{
+
+    font-family:
+    'Cormorant Garamond',
+    serif;
+
+    font-size:32px;
+
+    margin-bottom:20px;
+
+}
+
+
+.timeline{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:15px;
+
+    flex-wrap:wrap;
+
+}
+
+
+.timeline-item{
+
+    flex:1;
+
+    min-width:150px;
+
+    padding:15px;
+
+}
+
+
+.timeline-item .date{
+
+    font-size:14px;
+
+    opacity:.8;
+
+    margin-bottom:5px;
+
+}
+
+
+.timeline-item .title{
+
+    font-family:
+    'Cormorant Garamond',
+    serif;
+
+    font-size:23px;
+
+    font-weight:600;
+
+}
+
+
+/* =========================================================
+   ALT YAZI
+========================================================= */
 
 .footer{
-margin-top:40px;
-font-size:22px;
-color:#fff;
+
+    margin-top:40px;
+
+    font-family:
+    'Cormorant Garamond',
+    serif;
+
+    font-size:25px;
+
+    line-height:1.5;
+
 }
 
-hr{
-border:none;
-height:1px;
-background:rgba(255,255,255,.25);
-margin:30px 0;
+
+.footer-small{
+
+    font-family:
+    'Poppins',
+    sans-serif;
+
+    font-size:12px;
+
+    opacity:.7;
+
+    margin-top:15px;
+
 }
+
+
+/* =========================================================
+   MOBİL
+========================================================= */
 
 @media(max-width:768px){
 
-.card{
-padding:30px 20px;
+    .card{
+
+        padding:
+        40px 18px;
+
+        border-radius:30px;
+
+    }
+
+
+    .names{
+
+        font-size:58px;
+
+    }
+
+
+    .heart-name{
+
+        font-size:30px;
+
+    }
+
+
+    .subtitle{
+
+        font-size:19px;
+
+        letter-spacing:3px;
+
+    }
+
+
+    .message{
+
+        font-size:19px;
+
+    }
+
+
+    .countdown{
+
+        font-size:24px;
+
+    }
+
+
+    .events{
+
+        grid-template-columns:1fr;
+
+    }
+
+
+    .event h2{
+
+        font-size:29px;
+
+    }
+
+
+    .story{
+
+        margin-top:25px;
+
+    }
+
 }
 
-.names{
-font-size:48px;
-}
 
-.subtitle{
-font-size:22px;
-}
+/* =========================================================
+   ÇOK KÜÇÜK TELEFON
+========================================================= */
 
-.countdown{
-font-size:22px;
-}
+@media(max-width:400px){
 
-.message{
-font-size:16px;
-}
+    .names{
+
+        font-size:49px;
+
+    }
+
+
+    .subtitle{
+
+        font-size:17px;
+
+    }
+
+
+    .message{
+
+        font-size:17px;
+
+    }
+
+
+    .rings{
+
+        font-size:42px;
+
+    }
 
 }
 
 </style>
 
 </head>
+
+
 <body>
+
+
+<!-- ======================================================
+     HAREKETLİ KALPLER
+======================================================= -->
 
 <div id="hearts"></div>
 
+
+<!-- ======================================================
+     ANA ALAN
+======================================================= -->
+
 <div class="container">
+
 
 <div class="card">
 
-<div class="names">
-Muhammet ❤️ Esra
+
+<!-- YÜZÜK -->
+
+<div class="rings">
+
+💍 ✨ 💍
+
 </div>
+
+
+<!-- İSİMLER -->
+
+<div class="names">
+
+Muhammet
+
+<span class="heart-name">
+❤️
+</span>
+
+Esra
+
+</div>
+
+
+<!-- BAŞLIK -->
 
 <div class="subtitle">
-Düğün Davetiyesi
+
+DÜĞÜN DAVETİYESİ
+
 </div>
 
-<p class="message">
-Hayatlarımızı birleştirdiğimiz bu özel yolculukta,
-en mutlu günümüzde siz değerli dostlarımızı ve ailemizi
-aramızda görmekten büyük mutluluk duyacağız.
+
+<!-- AYRAÇ -->
+
+<div class="divider">
+
+<span></span>
+
+<i>🌹</i>
+
+<span></span>
+
+</div>
+
+
+<!-- MESAJ -->
+
+<div class="message">
+
+Hayatlarımızı birleştirdiğimiz
+bu özel ve anlamlı günde,
+
+<br>
+
+sevdiklerimizle birlikte olmanın
+mutluluğunu yaşamak istiyoruz.
 
 <br><br>
 
-Sevincimizi paylaşmak ve bu güzel anımıza şahit olmanız için
-sizleri düğünümüze davet ediyoruz.
+Bu güzel yolculuğa tanıklık etmeniz
+ve mutluluğumuzu paylaşmanız
+
+<br>
+
+bizler için en değerli hediyedir.
+
+<br><br>
+
+<strong>
+Sizleri aramızda görmekten
+büyük mutluluk duyacağız.
+</strong>
+
+</div>
+
+
+<!-- ======================================================
+     GERİ SAYIM
+======================================================= -->
+
+<div class="countdown-title">
+
+BÜYÜK GÜNE KALAN SÜRE
+
+</div>
+
+
+<div id="countdown"
+class="countdown">
+
+Hesaplanıyor...
+
+</div>
+
+
+<!-- ======================================================
+     ETKİNLİKLER
+======================================================= -->
+
+<div class="events">
+
+
+<!-- KINA -->
+
+<div class="event">
+
+<div class="event-icon">
+
+🌹
+
+</div>
+
+
+<h2>
+
+Kına Gecesi
+
+</h2>
+
+
+<p>
+
+📅 <strong>29 Ekim 2026</strong>
+
+<br>
+
+🕖 <strong>19:00</strong>
+
 </p>
 
-<div id="countdown" class="countdown"></div>
 
-<hr
+<a
+class="btn"
+href="https://maps.app.goo.gl/etv8LUm2YHyeJYs27"
+target="_blank"
+rel="noopener noreferrer">
+
+📍 Kına Konumu
+
+</a>
+
+</div>
+
+
+<!-- DÜĞÜN -->
+
+<div class="event">
+
+<div class="event-icon">
+
+💍
+
+</div>
+
+
+<h2>
+
+Nikah & Düğün
+
+</h2>
+
+
+<p>
+
+📅 <strong>1 Kasım 2026</strong>
+
+<br>
+
+🕝 <strong>14:30</strong>
+
+</p>
+
+
+<a
+class="btn"
+href="https://maps.app.goo.gl/cWBfH7H8pAKT4YdU8"
+target="_blank"
+rel="noopener noreferrer">
+
+📍 Düğün Konumu
+
+</a>
+
+</div>
+
+
+</div>
+
+
+<!-- ======================================================
+     HİKAYEMİZ
+======================================================= -->
+
+<div class="story">
+
+<h2>
+
+❤️ Bizim Hikâyemiz
+
+</h2>
+
+
+<div class="timeline">
+
+
+<div class="timeline-item">
+
+<div class="date">
+
+31 Ocak 2026
+
+</div>
+
+<div class="title">
+
+Nişanımız 💍
+
+</div>
+
+</div>
+
+
+<div class="timeline-item">
+
+<div class="date">
+
+29 Ekim 2026
+
+</div>
+
+<div class="title">
+
+Kına Gecemiz 🌹
+
+</div>
+
+</div>
+
+
+<div class="timeline-item">
+
+<div class="date">
+
+1 Kasım 2026
+
+</div>
+
+<div class="title">
+
+Düğünümüz ❤️
+
+</div>
+
+</div>
+
+
+</div>
+
+</div>
+
+
+<!-- ======================================================
+     MÜZİK
+======================================================= -->
+
+<button
+class="music-btn"
+id="musicButton"
+onclick="muzikCal()">
+
+🎵 Müziği Başlat
+
+</button>
+
+
+<!-- ======================================================
+     FOOTER
+======================================================= -->
+
+<div class="footer">
+
+Sevgiyle ❤️
+
+<br>
+
+Muhammet & Esra
+
+
+<div class="footer-small">
+
+Bir ömür boyu mutluluk dileğiyle...
+
+</div>
+
+</div>
+
+
+</div>
+
+</div>
+
+
+<!-- ======================================================
+     MÜZİK
+=======================================================
+
+     BURAYA KENDİ MP3 DOSYANIN ADINI YAZ.
+
+     ÖRNEK:
+
+     <source src="muzik.mp3" type="audio/mpeg">
+
+======================================================= -->
+
+<audio
+id="muzik"
+loop>
+
+<source
+src="muzik.mp3"
+type="audio/mpeg">
+
+</audio>
+
+
+<script>
+
+
+/* =========================================================
+   MÜZİK
+========================================================= */
+
+const muzik =
+document.getElementById("muzik");
+
+const musicButton =
+document.getElementById("musicButton");
+
+
+function muzikCal(){
+
+    if(muzik.paused){
+
+        muzik.play()
+        .then(()=>{
+
+            musicButton.innerHTML =
+            "⏸️ Müziği Durdur";
+
+        })
+        .catch(()=>{
+
+            alert(
+            "Müzik dosyası bulunamadı veya tarayıcı oynatmayı engelledi."
+            );
+
+        });
+
+    }
+
+    else{
+
+        muzik.pause();
+
+        musicButton.innerHTML =
+        "🎵 Müziği Başlat";
+
+    }
+
+}
+
+
+/* =========================================================
+   GERİ SAYIM
+=========================================================
+
+   DÜĞÜN:
+
+   1 Kasım 2026
+   14:30
+
+========================================================= */
+
+
+const hedef =
+new Date(
+"2026-11-01T14:30:00+03:00"
+).getTime();
+
+
+function sayac(){
+
+    const simdi =
+    new Date().getTime();
+
+
+    const fark =
+    hedef - simdi;
+
+
+    const countdown =
+    document.getElementById(
+    "countdown"
+    );
+
+
+    /* DÜĞÜN ZAMANI GELDİ */
+
+    if(fark <= 0){
+
+        countdown.innerHTML =
+        "💞 Bugün Mutluluğumuzun Günü 💞";
+
+        return;
+
+    }
+
+
+    const gun =
+    Math.floor(
+        fark /
+        (1000 * 60 * 60 * 24)
+    );
+
+
+    const saat =
+    Math.floor(
+        (fark %
+        (1000 * 60 * 60 * 24))
+        /
+        (1000 * 60 * 60)
+    );
+
+
+    const dakika =
+    Math.floor(
+        (fark %
+        (1000 * 60 * 60))
+        /
+        (1000 * 60)
+    );
+
+
+    const saniye =
+    Math.floor(
+        (fark %
+        (1000 * 60))
+        /
+        1000
+    );
+
+
+    countdown.innerHTML =
+
+    `💞 ${gun} gün
+    ${saat} saat
+    ${dakika} dakika
+    ${saniye} saniye`;
+
+}
+
+
+sayac();
+
+
+setInterval(
+    sayac,
+    1000
+);
+
+
+/* =========================================================
+   HAREKETLİ KALPLER
+========================================================= */
+
+
+const hearts =
+document.getElementById(
+"hearts"
+);
+
+
+const heartTypes = [
+
+    "❤️",
+
+    "💖",
+
+    "💕",
+
+    "💗",
+
+    "💓",
+
+    "💞"
+
+];
+
+
+for(
+    let i = 0;
+    i < 35;
+    i++
+){
+
+    const heart =
+    document.createElement(
+    "div"
+    );
+
+
+    heart.classList.add(
+    "heart"
+    );
+
+
+    heart.innerHTML =
+    heartTypes[
+        Math.floor(
+            Math.random() *
+            heartTypes.length
+        )
+    ];
+
+
+    heart.style.left =
+    Math.random() * 100 + "%";
+
+
+    heart.style.fontSize =
+    (15 + Math.random() * 28)
+    + "px";
+
+
+    heart.style.animationDuration =
+    (7 + Math.random() * 9)
+    + "s";
+
+
+    heart.style.animationDelay =
+    -(Math.random() * 15)
+    + "s";
+
+
+    hearts.appendChild(
+    heart
+    );
+
+}
+
+
+</script>
+
+
+</body>
+
+</html>
+```
