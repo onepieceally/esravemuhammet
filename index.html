@@ -1,23 +1,209 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Muhammet ❤️ Esra</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Muhammet ❤️ Esra</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet"  padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:linear-gradient(135deg,#fff8f8,#fff,#fef2f2);
+    color:#333;
+    min-height:100vh;
+}
+
+.hero{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:20px;
+}
+
+.card{
+    background:white;
+    width:100%;
+    max-width:700px;
+    padding:50px 30px;
+    border-radius:30px;
+    text-align:center;
+    box-shadow:0 15px 50px rgba(0,0,0,.12);
+    animation:fadeIn 1.2s ease;
+}
+
+.heart{
+    font-size:50px;
+    animation:pulse 1.5s infinite;
+}
+
+h1{
+    font-family:'Playfair Display',serif;
+    font-size:3rem;
+    margin-bottom:10px;
+}
+
+h2{
+    color:#c2185b;
+    margin-bottom:25px;
+    font-weight:500;
+}
+
+.message{
+    font-size:1.1rem;
+    margin-bottom:35px;
+    line-height:1.8;
+}
+
+.event{
+    background:#fff6f8;
+    border-radius:20px;
+    padding:20px;
+    margin:15px 0;
+}
+
+.event h3{
+    color:#c2185b;
+    margin-bottom:10px;
+}
+
+.date{
+    font-size:1.15rem;
+    font-weight:600;
+}
+
+.location-btn{
+    display:inline-block;
+    margin-top:15px;
+    background:#c2185b;
+    color:white;
+    text-decoration:none;
+    padding:12px 25px;
+    border-radius:50px;
+    transition:.3s;
+}
+
+.location-btn:hover{
+    background:#a00045;
+    transform:translateY(-2px);
+}
+
+.footer{
+    margin-top:35px;
+    color:#777;
+    font-size:.95rem;
+}
+
+.countdown{
+    margin-top:25px;
+    font-size:1.2rem;
+    font-weight:600;
+    color:#c2185b;
+}
+
+@keyframes pulse{
+    50%{
+        transform:scale(1.15);
+    }
+}
+
+@keyframes fadeIn{
+    from{
+        opacity:0;
+        transform:translateY(30px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+</style>
 </head>
-<body style="text-align:center; font-family:Arial; margin-top:50px;">
+<body>
 
-    <h1>Muhammet ❤️ Esra</h1>
-    <h2>Düğün Davetiyesi</h2>
+<section class="hero">
 
-    <p>Sizleri mutluluğumuzu paylaşmaya davet ediyoruz.</p>
+<div class="card">
 
-    <p>
-        📅 29 Ekim 2026<br>
-        🕖 Saat 19:00 Kına<br>
-        💍 1 Kasım 2026 Nikah<br>
-        📍 İstanbul
-    </p>
+<div class="heart">❤️</div>
+
+<h1>Muhammet & Esra</h1>
+
+<h2>Düğün Davetiyesi</h2>
+
+<p class="message">
+Hayatlarımızı birleştirdiğimiz bu özel yolculukta,
+mutluluğumuzu paylaşmak ve en güzel anılarımıza
+sizleri de ortak etmek istiyoruz.
+<br><br>
+Bu anlamlı günümüzde aramızda olmanız bize büyük mutluluk verecektir.
+</p>
+
+<div class="countdown" id="countdown"></div>
+
+<div class="event">
+<h3>🌹 Kına Gecesi</h3>
+
+<div class="date">
+📅 29 Ekim 2026 <br>
+🕖 19:00
+</div>
+
+<a class="location-btn"
+href="https://maps.app.goo.gl/etv8LUm2YHyeJYs27"
+target="_blank">
+📍 Konuma Git
+</a>
+
+</div>
+
+<div class="event">
+<h3>💍 Nikah & Düğün</h3>
+
+<div class="date">
+📅 1 Kasım 2026
+</div>
+
+<a class="location-btn"
+href="https://maps.app.goo.gl/cWBfH7H8pAKT4YdU8"
+target="_blank">
+📍 Konuma Git
+</a>
+
+</div>
+
+<div class="footer">
+Sevgiyle,
+<br>
+Muhammet ❤️ Esra
+</div>
+
+</div>
+
+</section>
+
+<script>
+
+const weddingDate = new Date("Nov 1, 2026 19:00:00").getTime();
+
+setInterval(() => {
+
+const now = new Date().getTime();
+const distance = weddingDate - now;
+
+const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+
+document.getElementById("countdown").innerHTML =
+"💞 Büyük güne " + days + " gün kaldı";
+
+},1000);
+
+</script>
 
 </body>
 </html>
