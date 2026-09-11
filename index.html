@@ -7,181 +7,126 @@
 <title>Muhammet ❤️ Esra</title>
 
 <style>
-
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&display=swap');
 
 *{
-margin:0;
-padding:0;
-box-sizing:border-box;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
 
 body{
-font-family:'Cormorant Garamond',serif;
-background:
-linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.45)),
-url('https://images.unsplash.com/photo-1511285560929-80b456fea0bc?auto=format&fit=crop&w=1600&q=80');
-background-size:cover;
-background-position:center;
-background-attachment:fixed;
-color:white;
-overflow-x:hidden;
+    font-family:'Cormorant Garamond',serif;
+    min-height:100vh;
+    background:linear-gradient(135deg,#e8b4c8,#b76e79);
+    color:white;
+    overflow-x:hidden;
 }
 
 .container{
-min-height:100vh;
-display:flex;
-justify-content:center;
-align-items:center;
-padding:20px;
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:20px;
 }
 
 .card{
-width:100%;
-max-width:850px;
-background:rgba(255,255,255,.12);
-backdrop-filter:blur(15px);
-border:1px solid rgba(255,255,255,.2);
-border-radius:35px;
-padding:40px;
-text-align:center;
-box-shadow:0 20px 60px rgba(0,0,0,.3);
+    width:100%;
+    max-width:850px;
+    background:rgba(255,255,255,.15);
+    backdrop-filter:blur(12px);
+    border-radius:30px;
+    padding:40px;
+    text-align:center;
+    box-shadow:0 20px 50px rgba(0,0,0,.25);
 }
 
 .ring{
-font-size:50px;
-margin-bottom:15px;
-animation:pulse 2s infinite;
-}
-
-@keyframes pulse{
-50%{
-transform:scale(1.15);
-}
+    font-size:55px;
+    margin-bottom:15px;
 }
 
 h1{
-font-size:64px;
-margin-bottom:10px;
+    font-size:64px;
+    margin-bottom:10px;
 }
 
 .subtitle{
-font-size:26px;
-letter-spacing:3px;
-margin-bottom:25px;
+    font-size:24px;
+    margin-bottom:25px;
+    letter-spacing:3px;
 }
 
 .text{
-font-size:22px;
-line-height:1.7;
-margin-bottom:30px;
+    font-size:22px;
+    line-height:1.7;
+    margin-bottom:30px;
 }
 
 .countdown{
-font-size:32px;
-font-weight:bold;
-color:#ffd700;
-margin-bottom:30px;
+    font-size:32px;
+    color:#ffe082;
+    font-weight:bold;
+    margin-bottom:25px;
 }
 
 .box{
-background:rgba(255,255,255,.12);
-padding:25px;
-border-radius:20px;
-margin:20px 0;
+    background:rgba(255,255,255,.12);
+    border-radius:20px;
+    padding:25px;
+    margin:20px 0;
 }
 
 .box h2{
-margin-bottom:15px;
-font-size:34px;
+    margin-bottom:15px;
 }
 
 .btn{
-display:inline-block;
-margin-top:15px;
-padding:15px 30px;
-background:#d4af37;
-color:black;
-font-weight:bold;
-text-decoration:none;
-border-radius:999px;
+    display:inline-block;
+    margin-top:15px;
+    background:#ffd54f;
+    color:#000;
+    text-decoration:none;
+    padding:14px 28px;
+    border-radius:999px;
+    font-weight:bold;
 }
 
 .music-btn{
-margin-top:20px;
-padding:15px 30px;
-background:white;
-color:black;
-border:none;
-border-radius:999px;
-cursor:pointer;
-font-weight:bold;
-font-size:16px;
+    margin-top:20px;
+    border:none;
+    background:white;
+    color:black;
+    padding:15px 28px;
+    border-radius:999px;
+    cursor:pointer;
+    font-weight:bold;
 }
 
 .footer{
-margin-top:30px;
-font-size:28px;
+    margin-top:30px;
+    font-size:24px;
 }
 
-.hearts{
-position:fixed;
-top:0;
-left:0;
-width:100%;
-height:100%;
-pointer-events:none;
+@media(max-width:700px){
+
+    h1{
+        font-size:46px;
+    }
+
+    .text{
+        font-size:18px;
+    }
+
+    .card{
+        padding:25px;
+    }
 }
-
-.heart{
-position:absolute;
-animation:fall linear infinite;
-}
-
-@keyframes fall{
-
-0%{
-transform:translateY(-100px);
-opacity:0;
-}
-
-10%{
-opacity:1;
-}
-
-100%{
-transform:translateY(110vh);
-opacity:0;
-}
-
-}
-
-@media(max-width:768px){
-
-h1{
-font-size:46px;
-}
-
-.subtitle{
-font-size:18px;
-}
-
-.text{
-font-size:18px;
-}
-
-.box h2{
-font-size:26px;
-}
-
-}
-
 </style>
 </head>
 
 <body>
-
-<div class="hearts" id="hearts"></div>
 
 <div class="container">
 
@@ -189,25 +134,23 @@ font-size:26px;
 
 <div class="ring">💍</div>
 
-<h1>Muhammet & Esra</h1>
+<h1>Muhammet &amp; Esra</h1>
 
 <div class="subtitle">
 DÜĞÜN DAVETİYESİ
 </div>
 
 <div class="text">
-Hayatlarımızı birleştirdiğimiz bu özel yolculukta,
-mutluluğumuzu paylaşmak ve en güzel günümüzde sizleri
-aramızda görmekten büyük onur duyacağız.
+Hayatlarımızı birleştirdiğimiz bu özel günde,
+sizleri aramızda görmekten büyük mutluluk duyacağız.
 </div>
 
-<div id="countdown" class="countdown">
+<div class="countdown" id="countdown">
 Yükleniyor...
 </div>
 
 <div class="box">
 <h2>🌹 Kına Gecesi</h2>
-
 <p>
 📅 29 Ekim 2026<br><br>
 🕖 Saat 19:00
@@ -216,13 +159,12 @@ Yükleniyor...
 <a class="btn"
 href="https://maps.app.goo.gl/etv8LUm2YHyeJYs27"
 target="_blank">
-📍 Konuma Git
+📍 Kına Konumu
 </a>
-
 </div>
 
 <div class="box">
-<h2>🤍 Nikah & Düğün</h2>
+<h2>🤍 Nikah &amp; Düğün</h2>
 
 <p>
 📅 1 Kasım 2026<br><br>
@@ -232,9 +174,8 @@ target="_blank">
 <a class="btn"
 href="https://maps.app.goo.gl/cWBfH7H8pAKT4YdU8"
 target="_blank">
-📍 Konuma Git
+📍 Düğün Konumu
 </a>
-
 </div>
 
 <button class="music-btn" onclick="baslatMuzik()">
@@ -243,7 +184,7 @@ target="_blank">
 
 <div class="footer">
 Sevgiyle ❤️<br>
-Muhammet & Esra
+Muhammet &amp; Esra
 </div>
 
 </div>
@@ -251,49 +192,45 @@ Muhammet & Esra
 </div>
 
 <audio id="music" loop>
-<source src="muzik.mp3cript>
+    <source src="muzik.mp3"ript>
 
 function baslatMuzik(){
-document.getElementById("music").play();
+    document.getElementById("music").play();
 }
 
 function updateCountdown(){
 
-const wedding=new Date("2026-11-01T19:00:00").getTime();
-const now=new Date().getTime();
+    const weddingDate =
+    new Date("2026-11-01T19:00:00");
 
-const fark=wedding-now;
+    const now = new Date();
 
-if(fark<0){
-document.getElementById("countdown").innerHTML=
-"💞 Bugün Büyük Gün 💞";
-return;
-}
+    const diff = weddingDate - now;
 
-const gun=Math.floor(fark/(1000*60*60*24));
-const saat=Math.floor((fark%(1000*60*60*24))/(1000*60*60));
+    if(diff <= 0){
+        document.getElementById("countdown").innerHTML =
+        "💞 Bugün Büyük Gün 💞";
+        return;
+    }
 
-document.getElementById("countdown").innerHTML=
-"💞 Büyük güne "+gun+" gün "+saat+" saat kaldı";
+    const days =
+    Math.floor(diff / (1000*60*60*24));
+
+    const hours =
+    Math.floor(
+        (diff % (1000*60*60*24))
+        /
+        (1000*60*60)
+    );
+
+    document.getElementById("countdown").innerHTML =
+    "💞 Büyük güne " + days +
+    " gün " + hours +
+    " saat kaldı";
 }
 
 updateCountdown();
 setInterval(updateCountdown,1000);
-
-for(let i=0;i<40;i++){
-
-const h=document.createElement("div");
-
-h.className="heart";
-h.innerHTML="🤍";
-
-h.style.left=Math.random()*100+"%";
-h.style.fontSize=(10+Math.random()*25)+"px";
-h.style.animationDuration=(8+Math.random()*10)+"s";
-
-document.getElementById("hearts").appendChild(h);
-
-}
 
 </script>
 
