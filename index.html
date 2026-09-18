@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="tr">
 
 <head>
@@ -9,7 +10,6 @@
 content="width=device-width, initial-scale=1.0">
 
 <title>Muhammet Ali ❤️ Esra</title>
-
 
 <!-- ======================================================
      GOOGLE FONTS
@@ -25,7 +25,6 @@ crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Allura&family=Cormorant+Garamond:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap"
 rel="stylesheet">
 
-
 <style>
 
 /* =========================================================
@@ -33,22 +32,14 @@ rel="stylesheet">
 ========================================================= */
 
 *{
-
     margin:0;
-
     padding:0;
-
     box-sizing:border-box;
-
 }
-
 
 html{
-
     scroll-behavior:smooth;
-
 }
-
 
 body{
 
@@ -62,26 +53,20 @@ body{
 
     position:relative;
 
-    /* ============================================
-       PREMIUM ARKA PLAN — 2027 esintili, modern
-       "aurora mesh" tasarım: derin zemin üzerinde
-       yavaşça süzülen yumuşak ışık lekeleri + ince
-       tanecikli (grain) doku
-    ============================================= */
-
     background:
-
     linear-gradient(
         160deg,
         #1b0f16,
         #2a1420,
         #1b0f16
     );
-
 }
 
 
-/* Yumuşak, bulanık ışık lekeleri — yavaşça süzülür */
+/* =========================================================
+   AURORA
+========================================================= */
+
 .aurora{
 
     position:fixed;
@@ -95,7 +80,6 @@ body{
     filter:blur(70px);
 
     opacity:.75;
-
 }
 
 
@@ -109,7 +93,6 @@ body{
 
     animation:
         drift ease-in-out infinite;
-
 }
 
 
@@ -131,7 +114,6 @@ body{
         );
 
     animation-duration:26s;
-
 }
 
 
@@ -155,7 +137,6 @@ body{
     animation-duration:32s;
 
     animation-delay:-6s;
-
 }
 
 
@@ -179,7 +160,6 @@ body{
     animation-duration:30s;
 
     animation-delay:-14s;
-
 }
 
 
@@ -203,42 +183,36 @@ body{
     animation-duration:22s;
 
     animation-delay:-3s;
-
 }
 
 
 @keyframes drift{
 
     0%,100%{
-
         transform:
             translate(0,0)
             scale(1);
-
     }
 
-
     33%{
-
         transform:
             translate(4%,6%)
             scale(1.1);
-
     }
 
-
     66%{
-
         transform:
             translate(-5%,-3%)
             scale(.95);
-
     }
 
 }
 
 
-/* İnce tanecikli doku — premium, "editorial" his katar */
+/* =========================================================
+   GRAIN
+========================================================= */
+
 .grain{
 
     position:fixed;
@@ -260,10 +234,6 @@ body{
 
 
 /* =========================================================
-   PREMIUM ARKA PLAN ANİMASYONU
-========================================================= */
-
-/* =========================================================
    KALPLER
 ========================================================= */
 
@@ -278,7 +248,6 @@ body{
     z-index:1;
 
     overflow:hidden;
-
 }
 
 
@@ -298,7 +267,6 @@ body{
             0 5px 10px
             rgba(0,0,0,.15)
         );
-
 }
 
 
@@ -312,23 +280,15 @@ body{
             scale(.8);
 
         opacity:0;
-
     }
-
 
     10%{
-
         opacity:.5;
-
     }
-
 
     50%{
-
         opacity:.7;
-
     }
-
 
     100%{
 
@@ -338,7 +298,6 @@ body{
             scale(1.2);
 
         opacity:0;
-
     }
 
 }
@@ -363,12 +322,11 @@ body{
     align-items:center;
 
     padding:30px 15px;
-
 }
 
 
 /* =========================================================
-   ANA KART - PREMIUM GLASS
+   ANA KART
 ========================================================= */
 
 .card{
@@ -384,7 +342,6 @@ body{
     border-radius:40px;
 
     background:
-
         linear-gradient(
             135deg,
             rgba(255,255,255,.16),
@@ -408,7 +365,6 @@ body{
 
         inset 0 1px 0
         rgba(255,255,255,.20);
-
 }
 
 
@@ -424,25 +380,19 @@ body{
 
     animation:
         ringFloat 3s ease-in-out infinite;
-
 }
 
 
 @keyframes ringFloat{
 
     0%,100%{
-
         transform:
             translateY(0);
-
     }
 
-
     50%{
-
         transform:
             translateY(-8px);
-
     }
 
 }
@@ -465,7 +415,6 @@ body{
         rgba(0,0,0,.25);
 
     margin-bottom:5px;
-
 }
 
 
@@ -478,7 +427,6 @@ body{
     font-size:50px;
 
     vertical-align:middle;
-
 }
 
 
@@ -499,7 +447,6 @@ body{
     font-weight:600;
 
     margin-bottom:30px;
-
 }
 
 
@@ -520,7 +467,6 @@ body{
     margin:20px 0 30px;
 
     opacity:.8;
-
 }
 
 
@@ -532,7 +478,6 @@ body{
 
     background:
         rgba(255,255,255,.7);
-
 }
 
 
@@ -541,7 +486,6 @@ body{
     font-style:normal;
 
     font-size:20px;
-
 }
 
 
@@ -564,14 +508,11 @@ body{
     font-size:22px;
 
     line-height:1.7;
-
 }
 
 
 .message strong{
-
     font-weight:700;
-
 }
 
 
@@ -590,7 +531,6 @@ body{
     opacity:.85;
 
     margin-bottom:10px;
-
 }
 
 
@@ -611,12 +551,11 @@ body{
     text-shadow:
         0 3px 15px
         rgba(0,0,0,.25);
-
 }
 
 
 /* =========================================================
-   ETKİNLİK KARTLARI
+   ETKİNLİKLER
 ========================================================= */
 
 .events{
@@ -627,7 +566,6 @@ body{
         repeat(2,1fr);
 
     gap:20px;
-
 }
 
 
@@ -638,7 +576,6 @@ body{
     border-radius:28px;
 
     background:
-
         linear-gradient(
             135deg,
             rgba(255,255,255,.14),
@@ -657,7 +594,6 @@ body{
         transform .3s ease,
         background .3s ease,
         box-shadow .3s ease;
-
 }
 
 
@@ -672,7 +608,6 @@ body{
     box-shadow:
         0 15px 35px
         rgba(0,0,0,.18);
-
 }
 
 
@@ -681,7 +616,6 @@ body{
     font-size:45px;
 
     margin-bottom:10px;
-
 }
 
 
@@ -694,7 +628,6 @@ body{
     font-size:32px;
 
     margin-bottom:15px;
-
 }
 
 
@@ -705,7 +638,6 @@ body{
     line-height:1.9;
 
     margin-bottom:18px;
-
 }
 
 
@@ -724,7 +656,6 @@ body{
     gap:10px;
 
     flex-wrap:wrap;
-
 }
 
 
@@ -762,7 +693,6 @@ body{
     box-shadow:
         0 8px 25px
         rgba(0,0,0,.15);
-
 }
 
 
@@ -774,15 +704,12 @@ body{
     box-shadow:
         0 14px 30px
         rgba(0,0,0,.25);
-
 }
 
 
 .apple-map{
-
     background:
         rgba(255,255,255,.97);
-
 }
 
 
@@ -793,15 +720,12 @@ body{
     margin-right:6px;
 
     margin-bottom:2px;
-
 }
 
 
 .google-map{
-
     background:
         rgba(255,255,255,.88);
-
 }
 
 
@@ -818,7 +742,6 @@ body{
     border-radius:28px;
 
     background:
-
         linear-gradient(
             135deg,
             rgba(255,255,255,.12),
@@ -829,9 +752,7 @@ body{
         1px solid
         rgba(255,255,255,.20);
 
-    transition:
-        .3s ease;
-
+    transition:.3s ease;
 }
 
 
@@ -842,7 +763,6 @@ body{
 
     transform:
         translateY(-3px);
-
 }
 
 
@@ -857,7 +777,6 @@ body{
             0 5px 10px
             rgba(0,0,0,.15)
         );
-
 }
 
 
@@ -870,7 +789,6 @@ body{
     font-size:32px;
 
     margin-bottom:10px;
-
 }
 
 
@@ -887,16 +805,35 @@ body{
     margin-bottom:20px;
 
     opacity:.95;
+}
+
+
+/* =========================================================
+   FOTOĞRAF YÜKLEME
+========================================================= */
+
+.photo-upload{
+
+    margin-top:20px;
 
 }
 
 
-.memory-btn{
+.photo-input{
 
-    display:inline-block;
+    display:none;
+}
 
-    padding:
-        14px 28px;
+
+.photo-select-btn{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    padding:14px 28px;
 
     border-radius:50px;
 
@@ -904,22 +841,21 @@ body{
 
     color:#8d2853;
 
-    text-decoration:none;
-
     font-size:14px;
 
     font-weight:700;
+
+    cursor:pointer;
 
     transition:.3s ease;
 
     box-shadow:
         0 5px 15px
         rgba(0,0,0,.10);
-
 }
 
 
-.memory-btn:hover{
+.photo-select-btn:hover{
 
     transform:
         translateY(-3px)
@@ -928,7 +864,258 @@ body{
     box-shadow:
         0 10px 25px
         rgba(0,0,0,.20);
+}
 
+
+/* =========================================================
+   SEÇİLEN FOTOĞRAFLAR
+========================================================= */
+
+.preview-container{
+
+    display:none;
+
+    margin-top:20px;
+
+}
+
+
+.preview-container.active{
+
+    display:block;
+}
+
+
+.preview-title{
+
+    font-size:14px;
+
+    opacity:.85;
+
+    margin-bottom:12px;
+}
+
+
+.preview-grid{
+
+    display:grid;
+
+    grid-template-columns:
+        repeat(4,1fr);
+
+    gap:10px;
+
+    margin-bottom:20px;
+}
+
+
+.preview-item{
+
+    position:relative;
+
+    aspect-ratio:1/1;
+
+    overflow:hidden;
+
+    border-radius:15px;
+
+    border:
+        1px solid
+        rgba(255,255,255,.25);
+}
+
+
+.preview-item img{
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:cover;
+}
+
+
+.preview-item span{
+
+    position:absolute;
+
+    right:5px;
+
+    top:5px;
+
+    width:24px;
+
+    height:24px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    border-radius:50%;
+
+    background:rgba(0,0,0,.65);
+
+    color:white;
+
+    font-size:13px;
+}
+
+
+/* =========================================================
+   YÜKLE BUTONU
+========================================================= */
+
+.upload-btn{
+
+    display:none;
+
+    width:100%;
+
+    max-width:300px;
+
+    margin:0 auto;
+
+    padding:14px 25px;
+
+    border:none;
+
+    border-radius:50px;
+
+    background:white;
+
+    color:#8d2853;
+
+    font-family:'Poppins',sans-serif;
+
+    font-size:14px;
+
+    font-weight:700;
+
+    cursor:pointer;
+
+    transition:.3s ease;
+
+    box-shadow:
+        0 5px 15px
+        rgba(0,0,0,.10);
+}
+
+
+.upload-btn.active{
+
+    display:block;
+}
+
+
+.upload-btn:hover{
+
+    transform:
+        translateY(-3px);
+
+    box-shadow:
+        0 10px 25px
+        rgba(0,0,0,.20);
+}
+
+
+.upload-btn:disabled{
+
+    opacity:.6;
+
+    cursor:not-allowed;
+
+    transform:none;
+}
+
+
+/* =========================================================
+   YÜKLEME DURUMU
+========================================================= */
+
+.upload-status{
+
+    display:none;
+
+    margin-top:18px;
+
+    font-size:14px;
+
+    line-height:1.7;
+}
+
+
+.upload-status.active{
+
+    display:block;
+}
+
+
+.progress-bar{
+
+    width:100%;
+
+    max-width:400px;
+
+    height:8px;
+
+    margin:10px auto;
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+    background:
+        rgba(255,255,255,.18);
+}
+
+
+.progress-fill{
+
+    width:0%;
+
+    height:100%;
+
+    border-radius:20px;
+
+    background:white;
+
+    transition:
+        width .2s ease;
+}
+
+
+/* =========================================================
+   BAŞARI MESAJI
+========================================================= */
+
+.success-message{
+
+    display:none;
+
+    margin-top:20px;
+
+    padding:15px;
+
+    border-radius:18px;
+
+    background:
+        rgba(255,255,255,.12);
+
+    border:
+        1px solid
+        rgba(255,255,255,.20);
+
+    font-size:14px;
+
+    line-height:1.7;
+}
+
+
+.success-message.active{
+
+    display:block;
 }
 
 
@@ -967,7 +1154,6 @@ body{
     box-shadow:
         0 8px 25px
         rgba(0,0,0,.12);
-
 }
 
 
@@ -980,12 +1166,11 @@ body{
     box-shadow:
         0 10px 25px
         rgba(0,0,0,.20);
-
 }
 
 
 /* =========================================================
-   ALT YAZI
+   FOOTER
 ========================================================= */
 
 .footer{
@@ -999,7 +1184,6 @@ body{
     font-size:25px;
 
     line-height:1.5;
-
 }
 
 
@@ -1014,7 +1198,6 @@ body{
     opacity:.7;
 
     margin-top:15px;
-
 }
 
 
@@ -1025,130 +1208,83 @@ body{
 @media(max-width:768px){
 
     .container{
-
         padding:
             20px 12px;
-
     }
 
-
     .card{
-
         padding:
             40px 18px;
 
         border-radius:30px;
-
     }
-
 
     .names{
-
         font-size:58px;
-
     }
-
 
     .heart-name{
-
         font-size:30px;
-
     }
-
 
     .subtitle{
-
         font-size:19px;
-
         letter-spacing:3px;
-
     }
-
 
     .message{
-
         font-size:19px;
-
     }
-
 
     .countdown{
-
         font-size:24px;
-
     }
-
 
     .events{
-
         grid-template-columns:1fr;
-
     }
-
 
     .event h2{
-
         font-size:29px;
-
     }
-
 
     .memories{
-
         margin-top:25px;
-
         padding:
             25px 18px;
-
     }
-
 
     .memories h2{
-
         font-size:29px;
-
     }
-
 
     .memories p{
-
         font-size:18px;
-
     }
 
-
-    .memory-btn{
-
-        width:100%;
-
-        max-width:280px;
-
+    .preview-grid{
+        grid-template-columns:
+            repeat(3,1fr);
     }
 
 }
 
 
-/* =========================================================
-   ÇOK KÜÇÜK TELEFON
-========================================================= */
-
 @media(max-width:500px){
 
     .map-buttons{
-
         flex-direction:column;
-
         align-items:center;
-
     }
 
-
     .map-buttons .btn{
-
         width:100%;
-
         max-width:280px;
+    }
 
+    .preview-grid{
+        grid-template-columns:
+            repeat(3,1fr);
     }
 
 }
@@ -1157,51 +1293,36 @@ body{
 @media(max-width:400px){
 
     .names{
-
         font-size:49px;
-
     }
-
 
     .subtitle{
-
         font-size:17px;
-
     }
-
 
     .message{
-
         font-size:17px;
-
     }
-
 
     .rings{
-
         font-size:42px;
-
     }
-
 
     .memories h2{
-
         font-size:27px;
-
     }
-
 
     .memories p{
-
         font-size:17px;
-
     }
 
-
     .countdown{
-
         font-size:22px;
+    }
 
+    .preview-grid{
+        grid-template-columns:
+            repeat(2,1fr);
     }
 
 }
@@ -1210,30 +1331,26 @@ body{
 
 </head>
 
-
 <body>
 
-
 <!-- ======================================================
-     HAREKETLİ KALPLER
-======================================================= -->
-
-<!-- ======================================================
-     ARKA PLAN — AURORA IŞIK LEKELERİ + TANECİK DOKU
+     ARKA PLAN
 ======================================================= -->
 
 <div class="aurora">
+
+```
 <span></span>
 <span></span>
 <span></span>
 <span></span>
+```
+
 </div>
 
 <div class="grain"></div>
 
-
 <div id="hearts"></div>
-
 
 <!-- ======================================================
      ANA ALAN
@@ -1241,9 +1358,7 @@ body{
 
 <div class="container">
 
-
 <div class="card">
-
 
 <!-- ======================================================
      YÜZÜK
@@ -1254,7 +1369,6 @@ body{
 💍 ✨ 💍
 
 </div>
-
 
 <!-- ======================================================
      İSİMLER
@@ -1274,7 +1388,6 @@ Esra
 
 </div>
 
-
 <!-- ======================================================
      BAŞLIK
 ======================================================= -->
@@ -1284,7 +1397,6 @@ Esra
 DÜĞÜN DAVETİYESİ
 
 </div>
-
 
 <!-- ======================================================
      AYRAÇ
@@ -1299,7 +1411,6 @@ DÜĞÜN DAVETİYESİ
 <span></span>
 
 </div>
-
 
 <!-- ======================================================
      MESAJ
@@ -1335,7 +1446,6 @@ büyük mutluluk duyacağız.
 
 </div>
 
-
 <!-- ======================================================
      GERİ SAYIM
 ======================================================= -->
@@ -1346,7 +1456,6 @@ BÜYÜK GÜNE KALAN SÜRE
 
 </div>
 
-
 <div id="countdown"
 class="countdown">
 
@@ -1354,13 +1463,11 @@ Hesaplanıyor...
 
 </div>
 
-
 <!-- ======================================================
      ETKİNLİKLER
 ======================================================= -->
 
 <div class="events">
-
 
 <!-- ======================================================
      KINA
@@ -1374,13 +1481,11 @@ Hesaplanıyor...
 
 </div>
 
-
 <h2>
 
 Kına Gecesi
 
 </h2>
-
 
 <p>
 
@@ -1392,9 +1497,7 @@ Kına Gecesi
 
 </p>
 
-
 <div class="map-buttons">
-
 
 <a
 class="btn apple-map"
@@ -1402,10 +1505,20 @@ href="https://maps.apple/p/AuvCYy6mqcowFX"
 target="_blank"
 rel="noopener noreferrer">
 
-<svg class="apple-icon" viewBox="0 0 384 512" width="15" height="15" fill="currentColor" aria-hidden="true"><path d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z"/></svg> Apple Haritalar
+<svg class="apple-icon"
+viewBox="0 0 384 512"
+width="15"
+height="15"
+fill="currentColor"
+aria-hidden="true">
+
+<path d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z"/>
+
+</svg>
+
+Apple Haritalar
 
 </a>
-
 
 <a
 class="btn google-map"
@@ -1417,11 +1530,9 @@ rel="noopener noreferrer">
 
 </a>
 
-
 </div>
 
 </div>
-
 
 <!-- ======================================================
      DÜĞÜN
@@ -1435,13 +1546,11 @@ rel="noopener noreferrer">
 
 </div>
 
-
 <h2>
 
 Nikah & Düğün
 
 </h2>
-
 
 <p>
 
@@ -1453,9 +1562,7 @@ Nikah & Düğün
 
 </p>
 
-
 <div class="map-buttons">
-
 
 <a
 class="btn apple-map"
@@ -1463,10 +1570,20 @@ href="https://maps.apple/p/atnUZN135Y7Y8B"
 target="_blank"
 rel="noopener noreferrer">
 
-<svg class="apple-icon" viewBox="0 0 384 512" width="15" height="15" fill="currentColor" aria-hidden="true"><path d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z"/></svg> Apple Haritalar
+<svg class="apple-icon"
+viewBox="0 0 384 512"
+width="15"
+height="15"
+fill="currentColor"
+aria-hidden="true">
+
+<path d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5 2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z"/>
+
+</svg>
+
+Apple Haritalar
 
 </a>
-
 
 <a
 class="btn google-map"
@@ -1478,21 +1595,17 @@ rel="noopener noreferrer">
 
 </a>
 
-
 </div>
 
 </div>
 
-
 </div>
-
 
 <!-- ======================================================
-     📸 ANILARIMIZI PAYLAŞALIM
+     📸 ANILARIMIZ
 ======================================================= -->
 
 <div class="memories">
-
 
 <div class="memories-icon">
 
@@ -1500,13 +1613,11 @@ rel="noopener noreferrer">
 
 </div>
 
-
 <h2>
 
 Anılarımızı Paylaşalım
 
 </h2>
-
 
 <p>
 
@@ -1519,20 +1630,83 @@ Birden fazla fotoğraf seçebilirsiniz.
 
 </p>
 
+<!-- ======================================================
+     FOTOĞRAF YÜKLEME
+======================================================= -->
 
-<a
-class="memory-btn"
-href="https://script.google.com/macros/s/AKfycbyFvEI9jHgZr4JlzViIjnOcclaVWyH2FAXc8OOp9vlXkOY9emMRqZv-2n7yk--y7tz1/exec"
-target="_blank"
-rel="noopener noreferrer">
+<div class="photo-upload">
 
-📸 Anını Paylaş
+<label
+for="photoInput"
+class="photo-select-btn">
 
-</a>
+📸 Fotoğrafları Seç
 
+</label>
+
+<input
+type="file"
+id="photoInput"
+class="photo-input"
+accept="image/*"
+multiple>
+
+<div
+id="previewContainer"
+class="preview-container">
+
+<div class="preview-title">
+
+Seçtiğiniz fotoğraflar:
 
 </div>
 
+<div
+id="previewGrid"
+class="preview-grid">
+</div>
+
+<button
+id="uploadButton"
+class="upload-btn"
+type="button">
+
+❤️ Fotoğrafları Paylaş
+
+</button>
+
+<div
+id="uploadStatus"
+class="upload-status">
+
+<div id="statusText">
+
+Hazırlanıyor...
+
+</div>
+
+<div class="progress-bar">
+
+<div
+id="progressFill"
+class="progress-fill">
+</div>
+
+</div>
+
+</div>
+
+<div
+id="successMessage"
+class="success-message">
+
+</div>
+
+</div>
+
+</div>
+
+</div>
 
 <!-- ======================================================
      MÜZİK
@@ -1547,7 +1721,6 @@ onclick="muzikCal()">
 
 </button>
 
-
 <!-- ======================================================
      FOOTER
 ======================================================= -->
@@ -1560,7 +1733,6 @@ Sevgiyle ❤️
 
 Muhammet Ali & Esra
 
-
 <div class="footer-small">
 
 Bir ömür boyu mutluluk dileğiyle...
@@ -1569,11 +1741,9 @@ Bir ömür boyu mutluluk dileğiyle...
 
 </div>
 
-
 </div>
 
 </div>
-
 
 <!-- ======================================================
      MÜZİK
@@ -1589,8 +1759,20 @@ type="audio/mpeg">
 
 </audio>
 
-
 <script>
+
+/* =========================================================
+   CLOUDINARY AYARLARI
+========================================================= */
+
+const CLOUDINARY_CLOUD_NAME =
+    "iqypzf0x";
+
+const CLOUDINARY_UPLOAD_PRESET =
+    "dugun-fotograflari";
+
+const CLOUDINARY_UPLOAD_URL =
+    `https://api.cloudinary.com/v1_1/${CLOUDINARY_CLOUD_NAME}/image/upload`;
 
 
 /* =========================================================
@@ -1659,16 +1841,13 @@ function sayac(){
     const simdi =
         new Date().getTime();
 
-
     const fark =
         hedef - simdi;
-
 
     const countdown =
         document.getElementById(
             "countdown"
         );
-
 
     if(fark <= 0){
 
@@ -1679,13 +1858,11 @@ function sayac(){
 
     }
 
-
     const gun =
         Math.floor(
             fark /
             (1000 * 60 * 60 * 24)
         );
-
 
     const saat =
         Math.floor(
@@ -1695,7 +1872,6 @@ function sayac(){
             (1000 * 60 * 60)
         );
 
-
     const dakika =
         Math.floor(
             (fark %
@@ -1703,7 +1879,6 @@ function sayac(){
             /
             (1000 * 60)
         );
-
 
     const saniye =
         Math.floor(
@@ -1713,19 +1888,15 @@ function sayac(){
             1000
         );
 
-
     countdown.innerHTML =
-
         `💞 ${gun} gün
         ${saat} saat
         ${dakika} dakika
         ${saniye} saniye`;
-
 }
 
 
 sayac();
-
 
 setInterval(
     sayac,
@@ -1734,27 +1905,501 @@ setInterval(
 
 
 /* =========================================================
+   FOTOĞRAF SEÇME
+========================================================= */
+
+const photoInput =
+document.getElementById(
+    "photoInput"
+);
+
+
+const previewContainer =
+document.getElementById(
+    "previewContainer"
+);
+
+
+const previewGrid =
+document.getElementById(
+    "previewGrid"
+);
+
+
+const uploadButton =
+document.getElementById(
+    "uploadButton"
+);
+
+
+const uploadStatus =
+document.getElementById(
+    "uploadStatus"
+);
+
+
+const statusText =
+document.getElementById(
+    "statusText"
+);
+
+
+const progressFill =
+document.getElementById(
+    "progressFill"
+);
+
+
+const successMessage =
+document.getElementById(
+    "successMessage"
+);
+
+
+let selectedFiles = [];
+
+
+/* =========================================================
+   FOTOĞRAF SEÇİLİNCE
+========================================================= */
+
+photoInput.addEventListener(
+    "change",
+    function(){
+
+        selectedFiles =
+            Array.from(
+                this.files
+            );
+
+        previewGrid.innerHTML = "";
+
+        successMessage.classList.remove(
+            "active"
+        );
+
+        uploadStatus.classList.remove(
+            "active"
+        );
+
+        progressFill.style.width =
+            "0%";
+
+
+        if(selectedFiles.length === 0){
+
+            previewContainer.classList.remove(
+                "active"
+            );
+
+            uploadButton.classList.remove(
+                "active"
+            );
+
+            return;
+        }
+
+
+        selectedFiles.forEach(
+            (file,index)=>{
+
+                const reader =
+                    new FileReader();
+
+
+                reader.onload =
+                    function(e){
+
+                        const item =
+                            document.createElement(
+                                "div"
+                            );
+
+                        item.className =
+                            "preview-item";
+
+
+                        item.innerHTML = `
+
+                            <img
+                                src="${e.target.result}"
+                                alt="Seçilen fotoğraf"
+                            >
+
+                            <span>
+                                ${index + 1}
+                            </span>
+
+                        `;
+
+
+                        previewGrid.appendChild(
+                            item
+                        );
+
+                    };
+
+
+                reader.readAsDataURL(
+                    file
+                );
+
+            }
+        );
+
+
+        previewContainer.classList.add(
+            "active"
+        );
+
+        uploadButton.classList.add(
+            "active"
+        );
+
+    }
+);
+
+
+/* =========================================================
+   TEK FOTOĞRAF CLOUDINARY'YE YÜKLE
+========================================================= */
+
+function uploadToCloudinary(
+    file,
+    onProgress
+){
+
+    return new Promise(
+        (resolve,reject)=>{
+
+            const xhr =
+                new XMLHttpRequest();
+
+
+            xhr.open(
+                "POST",
+                CLOUDINARY_UPLOAD_URL
+            );
+
+
+            xhr.upload.addEventListener(
+                "progress",
+                function(event){
+
+                    if(event.lengthComputable){
+
+                        const percent =
+                            Math.round(
+                                (
+                                    event.loaded /
+                                    event.total
+                                ) * 100
+                            );
+
+                        onProgress(
+                            percent
+                        );
+
+                    }
+
+                }
+            );
+
+
+            xhr.onload =
+                function(){
+
+                    if(
+                        xhr.status >= 200 &&
+                        xhr.status < 300
+                    ){
+
+                        try{
+
+                            const result =
+                                JSON.parse(
+                                    xhr.responseText
+                                );
+
+                            resolve(result);
+
+                        }
+
+                        catch(error){
+
+                            reject(
+                                new Error(
+                                    "Cloudinary cevabı okunamadı."
+                                )
+                            );
+
+                        }
+
+                    }
+
+                    else{
+
+                        let message =
+                            "Fotoğraf yüklenemedi.";
+
+                        try{
+
+                            const errorResult =
+                                JSON.parse(
+                                    xhr.responseText
+                                );
+
+                            if(
+                                errorResult.error &&
+                                errorResult.error.message
+                            ){
+
+                                message =
+                                    errorResult.error.message;
+
+                            }
+
+                        }
+
+                        catch(error){}
+
+
+                        reject(
+                            new Error(
+                                message
+                            )
+                        );
+
+                    }
+
+                };
+
+
+            xhr.onerror =
+                function(){
+
+                    reject(
+                        new Error(
+                            "İnternet bağlantısı nedeniyle yükleme başarısız oldu."
+                        )
+                    );
+
+                };
+
+
+            const formData =
+                new FormData();
+
+
+            formData.append(
+                "file",
+                file
+            );
+
+
+            formData.append(
+                "upload_preset",
+                CLOUDINARY_UPLOAD_PRESET
+            );
+
+
+            xhr.send(
+                formData
+            );
+
+        }
+    );
+
+}
+
+
+/* =========================================================
+   TÜM FOTOĞRAFLARI YÜKLE
+========================================================= */
+
+uploadButton.addEventListener(
+    "click",
+    async function(){
+
+        if(
+            selectedFiles.length === 0
+        ){
+
+            alert(
+                "Lütfen önce fotoğraf seç."
+            );
+
+            return;
+        }
+
+
+        uploadButton.disabled =
+            true;
+
+
+        photoInput.disabled =
+            true;
+
+
+        uploadStatus.classList.add(
+            "active"
+        );
+
+
+        successMessage.classList.remove(
+            "active"
+        );
+
+
+        const total =
+            selectedFiles.length;
+
+
+        let completed =
+            0;
+
+
+        const uploadedPhotos =
+            [];
+
+
+        try{
+
+            for(
+                let i = 0;
+                i < total;
+                i++
+            ){
+
+                const file =
+                    selectedFiles[i];
+
+
+                statusText.innerHTML =
+                    `📤 ${i + 1} / ${total} fotoğraf yükleniyor...`;
+
+
+                progressFill.style.width =
+                    "0%";
+
+
+                const result =
+                    await uploadToCloudinary(
+                        file,
+                        function(percent){
+
+                            progressFill.style.width =
+                                percent + "%";
+
+                        }
+                    );
+
+
+                uploadedPhotos.push(
+                    result
+                );
+
+
+                completed =
+                    i + 1;
+
+
+                progressFill.style.width =
+                    "100%";
+
+            }
+
+
+            statusText.innerHTML =
+                "❤️ Tüm fotoğraflar başarıyla yüklendi!";
+
+
+            successMessage.innerHTML =
+
+                `🎉 ${completed} fotoğrafınız
+                başarıyla paylaşıldı.<br><br>
+                Bu güzel anıyı bizimle paylaştığınız
+                için çok teşekkür ederiz. ❤️`;
+
+
+            successMessage.classList.add(
+                "active"
+            );
+
+
+            uploadButton.classList.remove(
+                "active"
+            );
+
+
+            previewGrid.innerHTML =
+                "";
+
+
+            selectedFiles =
+                [];
+
+
+            photoInput.value =
+                "";
+
+
+        }
+
+        catch(error){
+
+            console.error(
+                "Cloudinary Upload Error:",
+                error
+            );
+
+
+            statusText.innerHTML =
+                "❌ Fotoğraf yüklenirken bir hata oluştu.";
+
+
+            successMessage.innerHTML =
+
+                `Fotoğraflardan biri yüklenemedi.<br><br>
+                Hata: ${error.message}<br><br>
+                Lütfen internet bağlantınızı kontrol edip tekrar deneyin.`;
+
+
+            successMessage.classList.add(
+                "active"
+            );
+
+        }
+
+
+        uploadButton.disabled =
+            false;
+
+
+        photoInput.disabled =
+            false;
+
+    }
+);
+
+
+/* =========================================================
    HAREKETLİ KALPLER
 ========================================================= */
 
 const hearts =
-    document.getElementById(
-        "hearts"
-    );
+document.getElementById(
+    "hearts"
+);
 
 
 const heartTypes = [
 
     "❤️",
-
     "💖",
-
     "💕",
-
     "💗",
-
     "💓",
-
     "💞"
 
 ];
@@ -1825,7 +2470,6 @@ for(
 }
 
 </script>
-
 
 </body>
 
