@@ -1,19 +1,20 @@
+```html
 <!DOCTYPE html>
 <html lang="tr">
 
 <head>
-
-<link href="https://fonts.googleapis.com/css2?family=Allura&display=swap" rel="stylesheet">
 
 <meta charset="UTF-8">
 
 <meta name="viewport"
 content="width=device-width, initial-scale=1.0">
 
-<title> Muhammet Ali ❤️ Esra </title>
+<title>Muhammet Ali ❤️ Esra</title>
 
 
-<!-- GOOGLE FONTS -->
+<!-- ======================================================
+     GOOGLE FONTS
+======================================================= -->
 
 <link rel="preconnect"
 href="https://fonts.googleapis.com">
@@ -22,7 +23,7 @@ href="https://fonts.googleapis.com">
 href="https://fonts.gstatic.com"
 crossorigin>
 
-<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Cormorant+Garamond:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap"
+<link href="https://fonts.googleapis.com/css2?family=Allura&family=Cormorant+Garamond:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap"
 rel="stylesheet">
 
 
@@ -33,14 +34,20 @@ rel="stylesheet">
 ========================================================= */
 
 *{
+
     margin:0;
+
     padding:0;
+
     box-sizing:border-box;
+
 }
 
 
 html{
+
     scroll-behavior:smooth;
+
 }
 
 
@@ -54,50 +61,64 @@ body{
 
     overflow-x:hidden;
 
+    /* PREMIUM ARKA PLAN */
+
     background:
 
     radial-gradient(
-        circle at 20% 20%,
-        rgba(255,255,255,.35),
+        circle at 15% 15%,
+        rgba(255,220,190,.22),
+        transparent 28%
+    ),
+
+    radial-gradient(
+        circle at 85% 20%,
+        rgba(255,255,255,.12),
         transparent 25%
     ),
 
     radial-gradient(
-        circle at 80% 80%,
-        rgba(255,255,255,.20),
-        transparent 30%
+        circle at 50% 100%,
+        rgba(255,180,200,.18),
+        transparent 35%
     ),
 
     linear-gradient(
         135deg,
-        #6b173d,
-        #9e315f,
-        #d66d91,
-        #7e204c
+        #321022,
+        #4b132e,
+        #641b3b,
+        #8e3155,
+        #b45a78,
+        #5a1838,
+        #321022
     );
 
     background-size:
-    auto,
-    auto,
-    400% 400%;
+        auto,
+        auto,
+        auto,
+        500% 500%;
 
-    animation:bgMove 18s ease infinite;
+    animation:
+        premiumBackground 22s ease infinite;
 
 }
 
 
 /* =========================================================
-   ARKA PLAN ANİMASYONU
+   PREMIUM ARKA PLAN ANİMASYONU
 ========================================================= */
 
-@keyframes bgMove{
+@keyframes premiumBackground{
 
     0%{
 
         background-position:
-        0 0,
-        0 0,
-        0% 50%;
+            0 0,
+            0 0,
+            0 0,
+            0% 50%;
 
     }
 
@@ -105,9 +126,10 @@ body{
     50%{
 
         background-position:
-        0 0,
-        0 0,
-        100% 50%;
+            0 0,
+            0 0,
+            0 0,
+            100% 50%;
 
     }
 
@@ -115,9 +137,10 @@ body{
     100%{
 
         background-position:
-        0 0,
-        0 0,
-        0% 50%;
+            0 0,
+            0 0,
+            0 0,
+            0% 50%;
 
     }
 
@@ -152,13 +175,13 @@ body{
     opacity:.45;
 
     animation:
-    floatUp linear infinite;
+        floatUp linear infinite;
 
     filter:
-    drop-shadow(
-        0 5px 10px
-        rgba(0,0,0,.15)
-    );
+        drop-shadow(
+            0 5px 10px
+            rgba(0,0,0,.15)
+        );
 
 }
 
@@ -168,9 +191,9 @@ body{
     0%{
 
         transform:
-        translateY(0)
-        rotate(0deg)
-        scale(.8);
+            translateY(0)
+            rotate(0deg)
+            scale(.8);
 
         opacity:0;
 
@@ -194,9 +217,9 @@ body{
     100%{
 
         transform:
-        translateY(-120vh)
-        rotate(360deg)
-        scale(1.2);
+            translateY(-120vh)
+            rotate(360deg)
+            scale(1.2);
 
         opacity:0;
 
@@ -229,7 +252,7 @@ body{
 
 
 /* =========================================================
-   ANA KART
+   ANA KART - PREMIUM GLASS
 ========================================================= */
 
 .card{
@@ -245,21 +268,30 @@ body{
     border-radius:40px;
 
     background:
-    rgba(255,255,255,.13);
+
+        linear-gradient(
+            135deg,
+            rgba(255,255,255,.16),
+            rgba(255,255,255,.07)
+        );
 
     border:
-    1px solid
-    rgba(255,255,255,.35);
+        1px solid
+        rgba(255,255,255,.30);
 
     backdrop-filter:
-    blur(20px);
+        blur(25px);
 
     -webkit-backdrop-filter:
-    blur(20px);
+        blur(25px);
 
     box-shadow:
-    0 30px 80px
-    rgba(0,0,0,.30);
+
+        0 35px 100px
+        rgba(0,0,0,.40),
+
+        inset 0 1px 0
+        rgba(255,255,255,.20);
 
 }
 
@@ -275,7 +307,7 @@ body{
     margin-bottom:15px;
 
     animation:
-    ringFloat 3s ease-in-out infinite;
+        ringFloat 3s ease-in-out infinite;
 
 }
 
@@ -285,7 +317,7 @@ body{
     0%,100%{
 
         transform:
-        translateY(0);
+            translateY(0);
 
     }
 
@@ -293,7 +325,7 @@ body{
     50%{
 
         transform:
-        translateY(-8px);
+            translateY(-8px);
 
     }
 
@@ -307,14 +339,14 @@ body{
 .names{
 
     font-family:
-    'Allura',
-    cursive;
+        'Allura',
+        cursive;
 
     font-size:75px;
 
     text-shadow:
-    0 5px 20px
-    rgba(0,0,0,.25);
+        0 5px 20px
+        rgba(0,0,0,.25);
 
     margin-bottom:5px;
 
@@ -324,8 +356,8 @@ body{
 .heart-name{
 
     font-family:
-    'Poppins',
-    sans-serif;
+        'Poppins',
+        sans-serif;
 
     font-size:50px;
 
@@ -341,8 +373,8 @@ body{
 .subtitle{
 
     font-family:
-    'Cormorant Garamond',
-    serif;
+        'Cormorant Garamond',
+        serif;
 
     font-size:27px;
 
@@ -383,7 +415,7 @@ body{
     width:100px;
 
     background:
-    rgba(255,255,255,.7);
+        rgba(255,255,255,.7);
 
 }
 
@@ -410,8 +442,8 @@ body{
     margin-bottom:35px;
 
     font-family:
-    'Cormorant Garamond',
-    serif;
+        'Cormorant Garamond',
+        serif;
 
     font-size:22px;
 
@@ -449,8 +481,8 @@ body{
 .countdown{
 
     font-family:
-    'Cormorant Garamond',
-    serif;
+        'Cormorant Garamond',
+        serif;
 
     font-size:32px;
 
@@ -461,8 +493,8 @@ body{
     margin-bottom:35px;
 
     text-shadow:
-    0 3px 15px
-    rgba(0,0,0,.25);
+        0 3px 15px
+        rgba(0,0,0,.25);
 
 }
 
@@ -476,7 +508,7 @@ body{
     display:grid;
 
     grid-template-columns:
-    repeat(2,1fr);
+        repeat(2,1fr);
 
     gap:20px;
 
@@ -490,15 +522,25 @@ body{
     border-radius:28px;
 
     background:
-    rgba(255,255,255,.12);
+
+        linear-gradient(
+            135deg,
+            rgba(255,255,255,.14),
+            rgba(255,255,255,.06)
+        );
 
     border:
-    1px solid
-    rgba(255,255,255,.20);
+        1px solid
+        rgba(255,255,255,.20);
+
+    box-shadow:
+        inset 0 1px 0
+        rgba(255,255,255,.12);
 
     transition:
-    transform .3s ease,
-    background .3s ease;
+        transform .3s ease,
+        background .3s ease,
+        box-shadow .3s ease;
 
 }
 
@@ -506,10 +548,14 @@ body{
 .event:hover{
 
     transform:
-    translateY(-7px);
+        translateY(-7px);
 
     background:
-    rgba(255,255,255,.18);
+        rgba(255,255,255,.18);
+
+    box-shadow:
+        0 15px 35px
+        rgba(0,0,0,.18);
 
 }
 
@@ -526,8 +572,8 @@ body{
 .event h2{
 
     font-family:
-    'Cormorant Garamond',
-    serif;
+        'Cormorant Garamond',
+        serif;
 
     font-size:32px;
 
@@ -542,35 +588,64 @@ body{
 
     line-height:1.9;
 
-    margin-bottom:15px;
+    margin-bottom:18px;
 
 }
 
 
 /* =========================================================
-   BUTONLAR
+   HARİTA BUTONLARI
 ========================================================= */
+
+.map-buttons{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:10px;
+
+    flex-wrap:wrap;
+
+}
+
 
 .btn{
 
-    display:inline-block;
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    min-width:165px;
 
     padding:
-    13px 25px;
+        13px 20px;
 
     border-radius:50px;
 
-    background:white;
+    background:
+        rgba(255,255,255,.95);
 
-    color:#8d2853;
+    color:#711f45;
 
     text-decoration:none;
 
-    font-size:14px;
+    font-size:13px;
 
     font-weight:700;
 
-    transition:.3s ease;
+    transition:
+        transform .3s ease,
+        box-shadow .3s ease,
+        background .3s ease;
+
+    box-shadow:
+        0 8px 25px
+        rgba(0,0,0,.15);
 
 }
 
@@ -578,12 +653,27 @@ body{
 .btn:hover{
 
     transform:
-    translateY(-3px)
-    scale(1.04);
+        translateY(-4px);
 
     box-shadow:
-    0 10px 25px
-    rgba(0,0,0,.2);
+        0 14px 30px
+        rgba(0,0,0,.25);
+
+}
+
+
+.apple-map{
+
+    background:
+        rgba(255,255,255,.97);
+
+}
+
+
+.google-map{
+
+    background:
+        rgba(255,255,255,.88);
 
 }
 
@@ -601,7 +691,16 @@ body{
     border-radius:28px;
 
     background:
-    rgba(255,255,255,.08);
+
+        linear-gradient(
+            135deg,
+            rgba(255,255,255,.10),
+            rgba(255,255,255,.05)
+        );
+
+    border:
+        1px solid
+        rgba(255,255,255,.16);
 
 }
 
@@ -609,8 +708,8 @@ body{
 .story h2{
 
     font-family:
-    'Cormorant Garamond',
-    serif;
+        'Cormorant Garamond',
+        serif;
 
     font-size:32px;
 
@@ -657,8 +756,8 @@ body{
 .timeline-item .title{
 
     font-family:
-    'Cormorant Garamond',
-    serif;
+        'Cormorant Garamond',
+        serif;
 
     font-size:23px;
 
@@ -680,13 +779,19 @@ body{
     border-radius:28px;
 
     background:
-    rgba(255,255,255,.10);
+
+        linear-gradient(
+            135deg,
+            rgba(255,255,255,.12),
+            rgba(255,255,255,.05)
+        );
 
     border:
-    1px solid
-    rgba(255,255,255,.20);
+        1px solid
+        rgba(255,255,255,.20);
 
-    transition:.3s ease;
+    transition:
+        .3s ease;
 
 }
 
@@ -694,10 +799,10 @@ body{
 .memories:hover{
 
     background:
-    rgba(255,255,255,.14);
+        rgba(255,255,255,.15);
 
     transform:
-    translateY(-3px);
+        translateY(-3px);
 
 }
 
@@ -709,10 +814,10 @@ body{
     margin-bottom:10px;
 
     filter:
-    drop-shadow(
-        0 5px 10px
-        rgba(0,0,0,.15)
-    );
+        drop-shadow(
+            0 5px 10px
+            rgba(0,0,0,.15)
+        );
 
 }
 
@@ -720,8 +825,8 @@ body{
 .memories h2{
 
     font-family:
-    'Cormorant Garamond',
-    serif;
+        'Cormorant Garamond',
+        serif;
 
     font-size:32px;
 
@@ -733,8 +838,8 @@ body{
 .memories p{
 
     font-family:
-    'Cormorant Garamond',
-    serif;
+        'Cormorant Garamond',
+        serif;
 
     font-size:20px;
 
@@ -752,7 +857,7 @@ body{
     display:inline-block;
 
     padding:
-    14px 28px;
+        14px 28px;
 
     border-radius:50px;
 
@@ -769,8 +874,8 @@ body{
     transition:.3s ease;
 
     box-shadow:
-    0 5px 15px
-    rgba(0,0,0,.10);
+        0 5px 15px
+        rgba(0,0,0,.10);
 
 }
 
@@ -778,12 +883,12 @@ body{
 .memory-btn:hover{
 
     transform:
-    translateY(-3px)
-    scale(1.04);
+        translateY(-3px)
+        scale(1.04);
 
     box-shadow:
-    0 10px 25px
-    rgba(0,0,0,.20);
+        0 10px 25px
+        rgba(0,0,0,.20);
 
 }
 
@@ -797,20 +902,20 @@ body{
     margin-top:30px;
 
     padding:
-    15px 30px;
+        15px 30px;
 
     border:none;
 
     border-radius:50px;
 
     background:
-    rgba(255,255,255,.95);
+        rgba(255,255,255,.95);
 
     color:#8d2853;
 
     font-family:
-    'Poppins',
-    sans-serif;
+        'Poppins',
+        sans-serif;
 
     font-weight:700;
 
@@ -820,18 +925,22 @@ body{
 
     transition:.3s ease;
 
+    box-shadow:
+        0 8px 25px
+        rgba(0,0,0,.12);
+
 }
 
 
 .music-btn:hover{
 
     transform:
-    translateY(-3px)
-    scale(1.04);
+        translateY(-3px)
+        scale(1.04);
 
     box-shadow:
-    0 10px 25px
-    rgba(0,0,0,.20);
+        0 10px 25px
+        rgba(0,0,0,.20);
 
 }
 
@@ -845,8 +954,8 @@ body{
     margin-top:40px;
 
     font-family:
-    'Cormorant Garamond',
-    serif;
+        'Cormorant Garamond',
+        serif;
 
     font-size:25px;
 
@@ -858,8 +967,8 @@ body{
 .footer-small{
 
     font-family:
-    'Poppins',
-    sans-serif;
+        'Poppins',
+        sans-serif;
 
     font-size:12px;
 
@@ -876,10 +985,18 @@ body{
 
 @media(max-width:768px){
 
+    .container{
+
+        padding:
+            20px 12px;
+
+    }
+
+
     .card{
 
         padding:
-        40px 18px;
+            40px 18px;
 
         border-radius:30px;
 
@@ -949,7 +1066,7 @@ body{
         margin-top:25px;
 
         padding:
-        25px 18px;
+            25px 18px;
 
     }
 
@@ -982,6 +1099,28 @@ body{
 /* =========================================================
    ÇOK KÜÇÜK TELEFON
 ========================================================= */
+
+@media(max-width:500px){
+
+    .map-buttons{
+
+        flex-direction:column;
+
+        align-items:center;
+
+    }
+
+
+    .map-buttons .btn{
+
+        width:100%;
+
+        max-width:280px;
+
+    }
+
+}
+
 
 @media(max-width:400px){
 
@@ -1023,6 +1162,13 @@ body{
     .memories p{
 
         font-size:17px;
+
+    }
+
+
+    .countdown{
+
+        font-size:22px;
 
     }
 
@@ -1201,15 +1347,32 @@ Kına Gecesi
 </p>
 
 
+<div class="map-buttons">
+
+
 <a
-class="btn"
+class="btn apple-map"
+href="https://maps.apple/p/AuvCYy6mqcowFX"
+target="_blank"
+rel="noopener noreferrer">
+
+ Apple Haritalar
+
+</a>
+
+
+<a
+class="btn google-map"
 href="https://maps.app.goo.gl/etv8LUm2YHyeJYs27"
 target="_blank"
 rel="noopener noreferrer">
 
-📍 Kına Konumu
+📍 Google Haritalar
 
 </a>
+
+
+</div>
 
 </div>
 
@@ -1245,15 +1408,32 @@ Nikah & Düğün
 </p>
 
 
+<div class="map-buttons">
+
+
 <a
-class="btn"
+class="btn apple-map"
+href="https://maps.apple/p/atnUZN135Y7Y8B"
+target="_blank"
+rel="noopener noreferrer">
+
+ Apple Haritalar
+
+</a>
+
+
+<a
+class="btn google-map"
 href="https://maps.app.goo.gl/cWBfH7H8pAKT4YdU8"
 target="_blank"
 rel="noopener noreferrer">
 
-📍 Düğün Konumu
+📍 Google Haritalar
 
 </a>
+
+
+</div>
 
 </div>
 
@@ -1426,14 +1606,6 @@ Bir ömür boyu mutluluk dileğiyle...
 
 <!-- ======================================================
      MÜZİK
-=======================================================
-
-     BURAYA KENDİ MP3 DOSYANIN ADINI YAZ.
-
-     ÖRNEK:
-
-     <source src="muzik.mp3" type="audio/mpeg">
-
 ======================================================= -->
 
 <audio
@@ -1475,7 +1647,7 @@ function muzikCal(){
         .then(()=>{
 
             musicButton.innerHTML =
-            "⏸️ Müziği Durdur";
+                "⏸️ Müziği Durdur";
 
         })
 
@@ -1494,7 +1666,7 @@ function muzikCal(){
         muzik.pause();
 
         musicButton.innerHTML =
-        "🎵 Müziği Başlat";
+            "🎵 Müziği Başlat";
 
     }
 
@@ -1503,15 +1675,7 @@ function muzikCal(){
 
 /* =========================================================
    GERİ SAYIM
-=========================================================
-
-   DÜĞÜN:
-
-   1 Kasım 2026
-   14:30
-
 ========================================================= */
-
 
 const hedef =
 new Date(
@@ -1522,25 +1686,23 @@ new Date(
 function sayac(){
 
     const simdi =
-    new Date().getTime();
+        new Date().getTime();
 
 
     const fark =
-    hedef - simdi;
+        hedef - simdi;
 
 
     const countdown =
-    document.getElementById(
-        "countdown"
-    );
+        document.getElementById(
+            "countdown"
+        );
 
-
-    /* DÜĞÜN ZAMANI GELDİ */
 
     if(fark <= 0){
 
         countdown.innerHTML =
-        "💞 Bugün Mutluluğumuzun Günü 💞";
+            "💞 Bugün Mutluluğumuzun Günü 💞";
 
         return;
 
@@ -1548,45 +1710,45 @@ function sayac(){
 
 
     const gun =
-    Math.floor(
-        fark /
-        (1000 * 60 * 60 * 24)
-    );
+        Math.floor(
+            fark /
+            (1000 * 60 * 60 * 24)
+        );
 
 
     const saat =
-    Math.floor(
-        (fark %
-        (1000 * 60 * 60 * 24))
-        /
-        (1000 * 60 * 60)
-    );
+        Math.floor(
+            (fark %
+            (1000 * 60 * 60 * 24))
+            /
+            (1000 * 60 * 60)
+        );
 
 
     const dakika =
-    Math.floor(
-        (fark %
-        (1000 * 60 * 60))
-        /
-        (1000 * 60)
-    );
+        Math.floor(
+            (fark %
+            (1000 * 60 * 60))
+            /
+            (1000 * 60)
+        );
 
 
     const saniye =
-    Math.floor(
-        (fark %
-        (1000 * 60))
-        /
-        1000
-    );
+        Math.floor(
+            (fark %
+            (1000 * 60))
+            /
+            1000
+        );
 
 
     countdown.innerHTML =
 
-    `💞 ${gun} gün
-    ${saat} saat
-    ${dakika} dakika
-    ${saniye} saniye`;
+        `💞 ${gun} gün
+        ${saat} saat
+        ${dakika} dakika
+        ${saniye} saniye`;
 
 }
 
@@ -1604,11 +1766,10 @@ setInterval(
    HAREKETLİ KALPLER
 ========================================================= */
 
-
 const hearts =
-document.getElementById(
-    "hearts"
-);
+    document.getElementById(
+        "hearts"
+    );
 
 
 const heartTypes = [
@@ -1635,9 +1796,9 @@ for(
 ){
 
     const heart =
-    document.createElement(
-        "div"
-    );
+        document.createElement(
+            "div"
+        );
 
 
     heart.classList.add(
@@ -1646,38 +1807,44 @@ for(
 
 
     heart.innerHTML =
-    heartTypes[
-        Math.floor(
-            Math.random() *
-            heartTypes.length
-        )
-    ];
+        heartTypes[
+            Math.floor(
+                Math.random() *
+                heartTypes.length
+            )
+        ];
 
 
     heart.style.left =
-    Math.random() *
-    100 +
-    "%";
+        Math.random() *
+        100 +
+        "%";
 
 
     heart.style.fontSize =
-    (15 +
-    Math.random() * 28)
-    +
-    "px";
+        (
+            15 +
+            Math.random() * 28
+        )
+        +
+        "px";
 
 
     heart.style.animationDuration =
-    (7 +
-    Math.random() * 9)
-    +
-    "s";
+        (
+            7 +
+            Math.random() * 9
+        )
+        +
+        "s";
 
 
     heart.style.animationDelay =
-    -(Math.random() * 15)
-    +
-    "s";
+        -(
+            Math.random() * 15
+        )
+        +
+        "s";
 
 
     hearts.appendChild(
@@ -1692,3 +1859,4 @@ for(
 </body>
 
 </html>
+```
